@@ -1,0 +1,35 @@
+.logo{
+    padding-top: 1%;
+    padding-left: 1.3%;
+}
+.logo img{
+    height: 53px;
+    width: 460px;
+}
+.call{
+    padding-top: 1%;
+    padding-right: 20%;
+}
+.call img{
+    height: 50px;
+    width: 80px;
+}
+.call a{
+    font-size: 17.5px;
+    font-family: "Montserrat",sans-serif;
+}
+
+.navbar{
+    margin-top: 20px;
+    height: 73px;
+    font-family: "Montserrat",sans-serif;
+    font-size: 20px;
+}
+
+.collapse{
+    padding-left:2.3%; 
+}
+
+.nav-item{
+    margin-left: 20px;
+}
