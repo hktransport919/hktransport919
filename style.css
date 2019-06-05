@@ -34,7 +34,7 @@
 }
 .cover{
     width: 100%;
-    height: 550px;
+    height: 500px;
     background-image: url('./Images/Truck.jpg');
     background-size:100% 100%;
 }
