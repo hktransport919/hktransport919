@@ -1,6 +1,6 @@
 $(document).ready(function() {
- setTimeout(function(){
+    window.onload = function () {
+          setTimeout(function(){
         $('body').addClass('loaded');
-    }, 1000);
- 
-});
+     }, 1000);
+}});
