@@ -10,7 +10,6 @@
     width: 400px;
 }
 .call{
-    
     padding-right: 7%;
 }
 .call img{
@@ -41,9 +40,28 @@
     background-size: cover;
     
 }
-
 .content{
     height: 560px;
     width:100%;
+}
+.para1{
+   
+   background-color: floralwhite;
+    background: linear-gradient(180deg, floralwhite 91%, #ff0000 85%, #ff0000 94%, rgb(17, 0, 170) 94%);
+}
+.truck{
+    padding-top: 12%;
+    padding-left: 12%;
+    
+}
+.truck img{
+    height: 325px;
+    width: 550px;
+    border-radius:20px 20px 0 0;
+}
+#para{
+    padding-top: 8%;
+    padding-left: 12.5%;
+    font-family: "Montserrat";
 }
 
