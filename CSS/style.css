@@ -43,6 +43,25 @@
 .content{
     height: 560px;
     width:100%;
+    font-size:0;
+    line-height: 0;
+    vertical-align: middle;
+  display: block;
+    
+}
+.content div{
+    display: block;
+}
+
+#blue{
+    
+    vertical-align: top 
+   
+}
+#white{
+
+    vertical-align: top;
+    
 }
 .para1{
    
