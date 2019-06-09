@@ -73,15 +73,12 @@
     
 }
 .para1{
-   
-   background-color: floralwhite;
-    background: linear-gradient(180deg, floralwhite 91%, #110072 85%, #110072 94%, rgb(180, 180, 180) 94%);
+    background-color: floralwhite;
+    background: linear-gradient(180deg, white 91%, #110072 85%, #110072 94%, rgb(180, 180, 180) 94%);
 }
 .truck{
     padding-top: 12%;
-    padding-left: 12%;
-    padding-right: 0%;
-    
+   padding-right: 11%;
 }
 .truck img{
     height: 325px;
@@ -92,5 +89,11 @@
     padding-top: 8%;
     padding-left: 9%;
     font-family: "Montserrat";
+
 }
 
+.adv{
+    text-align: center;
+    font-family: "Montserrat";
+    padding-top: 4%;
+}

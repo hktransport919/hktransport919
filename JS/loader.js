@@ -2,5 +2,6 @@ $(document).ready(function() {
     window.onload = function () {
           setTimeout(function(){
         $('body').addClass('loaded');
-     }, 1500);
+     }, 0000);
 }});
+
