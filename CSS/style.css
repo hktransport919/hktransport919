@@ -47,12 +47,20 @@
     line-height: 0;
     vertical-align: middle;
   display: block;
+  
     
 }
 .content div{
     display: block;
-}
 
+}
+.box1{
+    padding-left: 10%;
+    padding-top: 4%;
+}
+.box2{
+    padding-left: 15%;
+}
 #blue{
     
     vertical-align: top 
@@ -66,11 +74,12 @@
 .para1{
    
    background-color: floralwhite;
-    background: linear-gradient(180deg, floralwhite 91%, #ff0000 85%, #ff0000 94%, rgb(17, 0, 170) 94%);
+    background: linear-gradient(180deg, floralwhite 91%, #110072 85%, #110072 94%, rgb(180, 180, 180) 94%);
 }
 .truck{
     padding-top: 12%;
     padding-left: 12%;
+    padding-right: 0%;
     
 }
 .truck img{
@@ -80,7 +89,7 @@
 }
 #para{
     padding-top: 8%;
-    padding-left: 10%;
+    padding-left: 9%;
     font-family: "Montserrat";
 }
 
