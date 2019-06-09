@@ -74,7 +74,7 @@
 }
 .para1{
     background-color: floralwhite;
-    background: linear-gradient(180deg, white 91%, #110072 85%, #110072 94%, rgb(180, 180, 180) 94%);
+    background: linear-gradient(180deg, white 91%, #ff1d1d 85%,#ff1d1d 94%, rgb(243, 243, 243) 94%);
 }
 .truck{
     padding-top: 12%;
