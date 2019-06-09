@@ -1,12 +1,14 @@
 /* loading screen */
-#loader-wrapper .loader {
+#loader-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 1001;
-    background: url(../Images/preloader.gif) center no-repeat #fff;
+    background: url(../Images/Loading.gif) center no-repeat #fff;
+    background-size: 35%;
 }
+
 #navbar{
     visibility: hidden;
 }
