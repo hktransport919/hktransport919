@@ -1,3 +1,6 @@
+body{
+    font-family: "Montserrat",sans-serif;
+}
 .heading{
     padding-top: 0.5%;
 }
@@ -18,13 +21,12 @@
 }
 .call a{
     font-size: 16px;
-    font-family: "Montserrat",sans-serif;
+    
    
 }
 .navbar{
     margin-top: 10px;
     height: 60px;
-    font-family: "Montserrat",sans-serif;
     font-size: 16px;
     background-color: aliceblue;
     
@@ -90,15 +92,18 @@
 #para{
     padding-top: 8%;
     padding-left: 9%;
-    font-family: "Montserrat";
+    
 
 }
 
 .adv{
     text-align: center;
-    font-family: "Montserrat";
-    padding-top: 4%;
+  padding-top: 3%;
 
+}
+.tag h1{
+    padding-bottom: 2%;
+    font-weight: bold;
 }
  .qform form{
      height: 580px;
