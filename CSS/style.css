@@ -106,12 +106,19 @@ body{
 
 }
 .tag h1{
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 .tag p{
+    padding-top: 5px;
     padding-left: 35px;
     padding-right: 35px;
+}
+.tag hr{
+    width: 100px;
+    color: blue;
+    border-top: 10px solid rgb(25, 0, 117);
+    border-radius:20px 20px 20px 20px;
 }
 .ico{
     padding-top: 30px;
@@ -141,18 +148,23 @@ body{
 #baj{
     height: 50px;
     width: 190px;
+    margin-top: 50px;
 }
 #amu{
     height: 85px;
     width: 150px;
+    margin-top: 25px;
 }
 #god{
     height: 65px;
     width: 150px;
+    margin-left: 250px;
 }
 #par{
     height: 85px;
     width: 165px;
+    margin-right: 250px;
+    margin-bottom: 50px;
 }
 #nir{
     height: 65px;
@@ -166,13 +178,8 @@ body{
     height: 100px;
     width: 180px;
 }
-
- .qform form{
-     height: 580px;
-     width: 350px;
-     text-align: center;
- }
- .form-row{
-    padding-top: 10%;
- }
+.form{
+    margin-left: 1000px;
+    margin-right: 50px;
+}
 

@@ -75,26 +75,26 @@
             </div>
         </div>
         <div class="adv">
-            <div class="tag container">
+            <div class="tag container" data-aos="fade-down">
                 <h1>Why You Should Choose Us ?</h1>
-                <!-- <hr class="divider m-10 "> -->
+                <hr >
                 <p>We are known for the cost effective transport service provider in India. With our "No Excuse In Business" motto, you will get the best service at a reasonable price for sure. With thousands of shifting done on yearly basis, we transport all types of goods such as Cement, Steel, ODC Machines, Packaged consumer boxes etc. We treat client's assets like our own & act with the company's long-term success in mind. Having our establishment since long time, we have gained a high reputation amongst various multinational companies as well as domestic companies in India.
                 </p>
             </div>
             <div class='ico '>
                 <div id="block" class="d-inline-flex justify-content-between">
                     <div class="col-sm-4" id='ico1'>
-                        <img src=".\Images\Delivery.png" alt="Icon">
+                        <img src=".\Images\Delivery.png" alt="Icon" data-aos="zoom-in">
                         <h3>On Time Delivery</h3>
                         <p>We are attached with the India's largest fleet community where we have not experienced any issues raised by the clients that they are not happy with the progress being made.</p>
                     </div>
                     <div class="col-sm-3" id='ico2'>
-                        <img src=".\Images\Drivers.png" alt="Icon">
+                        <img  src=".\Images\Drivers.png" alt="Icon" data-aos="zoom-in">
                         <h3>Trained Drivers</h3>
                         <p>We employ dedicated, trained & security cleared drivers to help you organize your move to anywhere in India at any time & in a safe way.</p>    
                     </div>
                     <div class="col-sm-4" id='ico3'>
-                        <img src=".\Images\Price.png" alt="Icon">
+                        <img src=".\Images\Price.png" alt="Icon"data-aos="zoom-in">
                         <h3>Competitive Pricing</h3>
                         <p>We always price low as compared to the market rate becuase for us maintaining a good relationship with our client is our first priority.</p>
                     </div>      
@@ -121,41 +121,133 @@
             </div>
         </div>
         <hr>
-        <div class="qform d-flex justify-content-center ">
-         <form class="border shadow ">
-            <div class="form-row justify-content-center">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last name">
-                </div>
-                <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Phone Number">
+        <div class= "form ">
+            <div class="container border shadow">
+            <div class="pt-3 col-md-12 order-md-1">
+                <h4 class="mb-3 text-center">Quotation Form</h4>
+                <form class="needs-validation" novalidate="">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">First name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
                     </div>
-                <div class="form-group">
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" mb-3">
+                    <label for="PhoneNo">Phone Number</label>
+                    <input type="number" class="form-control" id="PhoneNo" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                      Valid Number is required.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="DOM">Date of Movement</label>
+                    <input type="date" class="form-control" id="dom" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Please enter correct date.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="TOM">Time of Movement</label>
+                    <input type="time" class="form-control" id="tom" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Please enter correct time.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="service">Service Type</label>
+                    <input type="text" class="form-control" id="service" placeholder="" required="">
+                    <div class="invalid-feedback">
+                      Please enter correct service type.
+                    </div>
+                  </div>
+                <div class="row">
+                     <div class="col-md-4 mb-3">
+                      <label for="fcity">From City</label>
+                      <select class="custom-select d-block w-100" id="fcity" required="">
+                        <option value="">Choose...</option>
+                        <option>California</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="tcity">To City</label>
+                        <select class="custom-select d-block w-100" id="tcity" required="">
+                          <option value="">Choose...</option>
+                          <option>California</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                   
+                  </div>
+                  <hr class="mb-4">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue</button>
+                </form>
+              </div>
+            </div>
+            </div>
+       
+       
+        <!-- <div class=" d-flex justify-content-center ">
+         <form class=" container justify-content-center  ">
+            <div id="fb" class="d-block justify-content-center border shadow">
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                </div>
+                <div class="row">
                     <input type="text" class="form-control" placeholder="E-mail">
                 </div>
-                <div class="form-group">
+                <div class="row">
                     <input type="text" class="form-control" placeholder="Date of Movement">
                 </div>
-                <div class="form-group">
+                <div class="row">
                         <input type="text" class="form-control" placeholder="Time of Movement">
                 </div>
-                <div class="form-group">
+                <div class="row">
                         <input type="text" class="form-control" placeholder="Service Type">
                 </div>
-                <div class="form-group">
+                <div class="row">
                         <input type="text" class="form-control" placeholder="From City">
                 </div>
-                <div class="form-group">
+                <div class="row">
                         <input type="text" class="form-control" placeholder="To City">
                 </div>
         
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        </div>
+        </div> -->
        
         
 
