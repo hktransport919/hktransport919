@@ -108,6 +108,10 @@ body{
     padding-bottom: 30px;
     font-weight: bold;
 }
+.tag p{
+    padding-left: 35px;
+    padding-right: 35px;
+}
 .ico{
     padding-top: 30px;
 }
@@ -117,9 +121,13 @@ body{
 #ico3{
     padding-right: 120px;
 }
+#ico3 h3{
+
+}
 
 .ico h3{
     padding-top: 20px;
+    font-size: 25px;
 }
  .qform form{
      height: 580px;
