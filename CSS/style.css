@@ -80,8 +80,19 @@ body{
     background-color: floralwhite;
     background: linear-gradient(180deg, white 91%, #cfcfcf 85%,#cfcfcf 94%, rgb(25, 0, 117) 94%);
 }
+#para{
+    padding-top: 70px;
+    padding-left: 9%;
+}
+#para h1{
+    font-size: 32px;
+}
+#para p{
+    padding-top: 15px;
+    font-size: 16px;
+}
 .truck{
-    padding-top: 12%;
+    padding-top: 8%;
    padding-right: 10%;
 }
 .truck img{
@@ -89,15 +100,7 @@ body{
     width: 550px;
     border-radius:20px 20px 0 0;
 }
-#para{
-    padding-top: 100px;
-    padding-left: 9%;
-    
-}
-#para p{
-    padding-top: 15px;
-    font-size: 15px;
-}
+
 
 .adv{
     text-align: center;
