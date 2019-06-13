@@ -148,23 +148,23 @@ body{
 #baj{
     height: 50px;
     width: 190px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 #amu{
     height: 85px;
     width: 150px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 #god{
     height: 65px;
     width: 150px;
-    margin-left: 250px;
+    /* margin-left: 250px; */
 }
 #par{
     height: 85px;
     width: 165px;
-    margin-right: 250px;
-    margin-bottom: 50px;
+    /* margin-right: 250px;
+    margin-bottom: 50px; */
 }
 #nir{
     height: 65px;
@@ -178,8 +178,5 @@ body{
     height: 100px;
     width: 180px;
 }
-.form{
-    margin-left: 1000px;
-    margin-right: 50px;
-}
+
 
