@@ -156,7 +156,7 @@ body{
 #amu{
     height: 85px;
     width: 150px;
-    /* margin-top: 25px; */
+    margin-top: 45px;
 }
 #god{
     height: 65px;
@@ -177,9 +177,10 @@ body{
     height: 85px;
     width: 165px;
 }
-#eic{
+#lnt{
     height: 100px;
-    width: 180px;
+    width: 100px;
+    margin-right: 20px;
 }
 
 
