@@ -17,6 +17,8 @@
     <script type="text/JavaScript" src='./JS/loader.js'></script>
     <!-- animation -->
     <link rel="stylesheet" href="./CSS/aos.css" />
+    <!-- contact icon -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
 </head>
 <body >
         <div id="loader-wrapper">
@@ -126,17 +128,20 @@
           <div class="row d-flex justify-content-between">
             <div class="col-md-4 mt-5">
                 <h3 >Contact Information</h3>
-                <div class="mt-5">
-                  <address class="mt-3">
+                <div class="mt-5 row align-items-start">
+                    <i class="fas fa-map-marker-alt col-sm-1"></i>
+                  <span class="ml-3 col-md-9">
                     Shop No.4, Gangotri Complex, Wani Peth, Khed, Ratnagiri - 415709
-                  </address>
+                  </span>
                 </div>
-                <div class="mt-4">
-                    <span >+91 7448115919</span>
+                <div class="mt-4 row align-items-center">
+                    <i class="fas fa-phone-alt col-sm-1"></i> 
+                  <span class="ml-3 col">+91 7448115919</span>
                 </div>
                 
-                <div class="mt-4">
-                    <span>hktransport919@gmail.com</span>
+                <div class="mt-4 row align-items-center">
+                    <i class="fas fa-envelope col-sm-1"></i>
+                    <span class="ml-3 col">hktransport919@gmail.com</span>
                 </div>
                 
               </div>
@@ -146,82 +151,89 @@
                 <form class="needs-validation" novalidate="">
                   <div class="row">
                     <div class="col-md-6 mb-3">
-                      <label for="firstName">Name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                      <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required="">
                       <div class="invalid-feedback">
                         Valid name is required.
                       </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="PhoneNo">Phone Number</label>
-                        <input type="number" class="form-control" id="PhoneNo" placeholder="" value="" required="">
+                        <input type="number" class="form-control" id="PhoneNo" placeholder="Phone Number" value="" required="">
                         <div class="invalid-feedback">
                           Valid Number is required.
                         </div>
+                      </div>
                     </div>
-                  </div>
+                 
                   <div class="mb-3">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <input type="email" class="form-control" id="email" placeholder="Email ID">
                     <div class="invalid-feedback">
                       Please enter a valid email address for shipping updates.
                     </div>
                   </div>
-          
-                  <div class="mb-3">
-                    <label for="DOM">Date of Movement</label>
-                    <input type="date" class="form-control" id="dom" placeholder="" required="">
-                    <div class="invalid-feedback">
-                      Please enter correct date.
+                  <div class="row mb-3">
+                  <div class="col-md-4 ">
+                          <select id="inputVechicle" class="form-control" placeholder="Vehicle Type">
+                            <option>Vehicle Type</option>
+                            <option>Truck</option>
+                            <option>Container</option>
+                            <option>Trailer</option>
+                          </select>
                     </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="TOM">Time of Movement</label>
-                    <input type="time" class="form-control" id="tom" placeholder="" required="">
-                    <div class="invalid-feedback">
-                      Please enter correct time.
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="service">Service Type</label>
-                    <input type="text" class="form-control" id="service" placeholder="" required="">
-                    <div class="invalid-feedback">
-                      Please enter correct service type.
-                    </div>
-                  </div>
-                <div class="row">
-                     <div class="col-md-4 mb-3">
-                      <label for="fcity">From City</label>
-                      <select class="custom-select d-block w-100" id="fcity" required="">
-                        <option value="">Choose...</option>
-                        <option>California</option>
+                    <div class="col">
+                      <select id="inputVtype" class="form-control" placeholder="">
+                        <option >Choose</option>
+                             <option >Truck (5 Ton 14 Feet 6 Wheel)</option>
+                            <option>Truck (7 Ton 17 Feet 6 Wheel)</option>
+                            <option>Truck (9 Ton 6 Wheel)</option>
+                            <option>Truck (16 Ton 22 Feet 10 Wheel)</option>
+                            <option>Truck (21 Ton 22 Feet 12 Wheel)</option>
+                            <option>Truck (25 Ton 28 Feet 14 Wheel)</option>
+                            <option>Truck (28 Ton 18 Wheel)</option>
+                            <option>Truck (35 Ton 22 Wheel)</option>
+                            <option>Container (LCV 5 Ton 14-17 Feet)</option>
+                            <option>Container (7 Ton 19-22 Feet)</option>
+                            <option>Container (7 Ton 24 Feet Single Axle)</option>
+                            <option>Container (15 Ton 24 Feet Multi Axle)</option>
+                            <option>Container (7 Ton 32 Feet Single Axle)</option>
+                            <option>Container (15 Ton 32 Feet Multi Axle)</option>
+                            <option>Trailer (25 Ton 40 Feet High Bed)</option>
+                            <option>Trailer (30 Ton 40 Feet High Bed)</option>
+                            <option>Trailer (35 Ton 40 Feet High Bed)</option>
+                            <option>Trailer (25 Ton 40 Feet Semi Bed)</option>
+                            <option>Trailer (30 Ton 40 Feet Semi Bed)</option>
+                            <option>Trailer (35 Ton 40 Feet Semi Bed)</option>
+                            <option>Trailer (25 Ton 40 Feet Low Bed)</option>
+                            <option>Trailer (30 Ton 40 Feet Low Bed)</option>
+                            <option>Trailer (35 Ton 40 Feet Low Bed)</option>
                       </select>
-                      <div class="invalid-feedback">
-                        Please provide a valid city.
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="tcity">To City</label>
-                        <select class="custom-select d-block w-100" id="tcity" required="">
-                          <option value="">Choose...</option>
-                          <option>California</option>
+                     </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-4 ">
+                        <select id="inputC1" class="form-control" placeholder="From City">
+                          <option>From City</option>
+                          <option>Mumbai</option>
+                          <option>Pune</option>
+                          <option>Hydarabad</option>
                         </select>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                   
                   </div>
-                  <hr class="mb-4">
+                  <div class="col-md-4 ">
+                    <select id="inputC2" class="form-control" placeholder="To City">
+                      <option>To City</option>
+                      <option>Mumbai</option>
+                      <option>Pune</option>
+                      <option>Hydarabad</option>
+                    </select>
+                  </div>
+                </div>
+                   <hr class="mb-4">
                   <button class="btn btn-primary btn-lg btn-block" type="submit">Continue</button>
                 </form>
+              </div>
               </div>
             </div>
           </div>
           </div>
-        </div>
        
        
       
