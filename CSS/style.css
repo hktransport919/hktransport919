@@ -47,7 +47,7 @@ nav img{
 .main-nav{
     float: left;
     list-style: none;
-    padding-top: 8px;
+    margin-top: 12px;
 }
 .main-nav li{
     display: inline-block;
@@ -68,7 +68,7 @@ nav img{
 }
 
 nav{
-    padding: 8px 0;
+    padding: 4px 0;
     background-color: aliceblue;
 }
 
