@@ -36,7 +36,9 @@
         
         <div class="heading d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src=".\Images\HK Logo Website.png" alt="Logo">
+              <a href="./index.html">
+                  <img src=".\Images\HK Logo Website.png" alt="Logo" onclick="">
+              </a>
             </div>
             <div class="call d-flex flex-row">
                 <img src=".\Images\Call Blue Logo.png" alt="Call">
@@ -157,7 +159,7 @@
                 <h3 >Contact Information</h3>
                 <div class="mt-5 row align-items-start">
                     <i class="fas fa-map-marker-alt col-sm-1"></i>
-                  <span class="ml-3 col-md-9">
+                  <span class="ml-3 col-md-9"></span>
                     Shop No.4, Gangotri Complex, Wani Peth, Khed, Ratnagiri - 415709
                   </span>
                 </div>
@@ -173,19 +175,19 @@
                 
               </div>
          
-              <div class="col-md-7">
+              <div class="col-md-7 ">
             <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                 <h4 class="mb-3 text-center">Quotation Form</h4>
-                <form class="needs-validation" novalidate="">
+                <form id="contact-form" method="POST" action="./php/contact-form.php" class="needs-validation" novalidate>
                   <div class="row">
                     <div class="col-md-6 mb-3">
-                      <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required="">
+                      <input type="name" class="form-control" id="firstName" placeholder="Name" value="" required>
                       <div class="invalid-feedback">
                         Valid name is required.
                       </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <input type="number" class="form-control" id="PhoneNo" placeholder="Phone Number" value="" required="">
+                        <input type="text" class="form-control" id="PhoneNo" placeholder="Phone Number" value="" required>
                         <div class="invalid-feedback">
                           Valid Number is required.
                         </div>
@@ -193,69 +195,17 @@
                     </div>
                  
                   <div class="mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="Email ID">
+                    <input type="email" class="form-control" id="email" placeholder="Email ID" required>
                     <div class="invalid-feedback">
                       Please enter a valid email address for shipping updates.
                     </div>
                   </div>
-                  <div class="row mb-3">
-                  <div class="col-md-4 ">
-                          <select id="inputVechicle" class="form-control" placeholder="Vehicle Type">
-                            <option>Vehicle Type</option>
-                            <option>Truck</option>
-                            <option>Container</option>
-                            <option>Trailer</option>
-                          </select>
-                    </div>
-                    <div class="col">
-                      <select id="inputVtype" class="form-control" placeholder="">
-                        <option >Choose</option>
-                             <option >Truck (5 Ton 14 Feet 6 Wheel)</option>
-                            <option>Truck (7 Ton 17 Feet 6 Wheel)</option>
-                            <option>Truck (9 Ton 6 Wheel)</option>
-                            <option>Truck (16 Ton 22 Feet 10 Wheel)</option>
-                            <option>Truck (21 Ton 22 Feet 12 Wheel)</option>
-                            <option>Truck (25 Ton 28 Feet 14 Wheel)</option>
-                            <option>Truck (28 Ton 18 Wheel)</option>
-                            <option>Truck (35 Ton 22 Wheel)</option>
-                            <option>Container (LCV 5 Ton 14-17 Feet)</option>
-                            <option>Container (7 Ton 19-22 Feet)</option>
-                            <option>Container (7 Ton 24 Feet Single Axle)</option>
-                            <option>Container (15 Ton 24 Feet Multi Axle)</option>
-                            <option>Container (7 Ton 32 Feet Single Axle)</option>
-                            <option>Container (15 Ton 32 Feet Multi Axle)</option>
-                            <option>Trailer (25 Ton 40 Feet High Bed)</option>
-                            <option>Trailer (30 Ton 40 Feet High Bed)</option>
-                            <option>Trailer (35 Ton 40 Feet High Bed)</option>
-                            <option>Trailer (25 Ton 40 Feet Semi Bed)</option>
-                            <option>Trailer (30 Ton 40 Feet Semi Bed)</option>
-                            <option>Trailer (35 Ton 40 Feet Semi Bed)</option>
-                            <option>Trailer (25 Ton 40 Feet Low Bed)</option>
-                            <option>Trailer (30 Ton 40 Feet Low Bed)</option>
-                            <option>Trailer (35 Ton 40 Feet Low Bed)</option>
-                      </select>
-                     </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-md-4 ">
-                        <select id="inputC1" class="form-control" placeholder="From City">
-                          <option>From City</option>
-                          <option>Mumbai</option>
-                          <option>Pune</option>
-                          <option>Hydarabad</option>
-                        </select>
+                  <div class="mb-3">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message" required></textarea>
                   </div>
-                  <div class="col-md-4 ">
-                    <select id="inputC2" class="form-control" placeholder="To City">
-                      <option>To City</option>
-                      <option>Mumbai</option>
-                      <option>Pune</option>
-                      <option>Hydarabad</option>
-                    </select>
-                  </div>
-                </div>
+             
                    <hr class="mb-4">
-                  <button class="btn btn-primary btn-lg btn-block" type="submit">Continue</button>
+                  <button class="btn btn-primary btn-lg btn-block mb-4 form-control submit" type="submit">Get Quotation</button>
                 </form>
               </div>
               </div>
