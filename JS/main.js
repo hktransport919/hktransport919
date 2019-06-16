@@ -92,13 +92,22 @@ $(document).ready(function(){
           $('.js--tag').removeClass('container');
           $('#block').removeClass('row');
           $('#block').addClass('flex-column');
-        }else if (ww >= 701) {
+        }else if (ww >= 767) {
           $('.js--para').addClass('col-sm-5');
           $('.js--tag').addClass('container');
           $('#block').addClass('row');
           $('#block').removeClass('flex-column');
         };
+        if (ww < 480) {
+          $('.heading').removeClass('d-flex');
+          $('.heading').addClass('text-center');  
+
+        }else if (ww >= 480) {
+          $('.heading').removeClass('text-center');
+          $('.heading').addClass('d-flex');
+        };
       };
+
       $(window).resize(function(){
         alterClass();
       });

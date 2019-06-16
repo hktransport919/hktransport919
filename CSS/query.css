@@ -182,9 +182,6 @@
 
 /* Small phones from : 0 to 480px */
 @media only screen  and (max-width:480px){
-    .heading{
-        padding: 0 55px;
-    }
     .logo img{
         height: 30px;
         width: 200px;
@@ -212,15 +209,19 @@
         height: 36px;
     }
     #para h1{
-        font-size: 18px;
+        font-size: 20px;
     }
     #para p,.tag p,.ico p{
-        font-size: 10px;
+        font-size: 12.5px;
+    }
+    .adv{
+        background: linear-gradient(180deg, white 97%, #e60202 97%,#e60202 98%, rgb(25, 0, 117) 94%);
     }
     .tag h1{
         padding-top: 10px;
-        font-size: 20px;
         padding-bottom: 0px;
+        font-size: 20px;
+       
     }
     .tag p{
         padding-top: 0px;
@@ -230,7 +231,7 @@
         border-top: 4px solid rgb(25, 0, 117);
     }
     .ico h3,.contact h3{
-        font-size: 16px;
+        font-size: 20px;
     }
     #ico1,#ico2,#ico3{
         padding:0 40px;
@@ -239,7 +240,7 @@
         Clients
     ***********************/
     .client h1{
-        font-size: 20px;
+        font-size: 25px;
     }
     #rel{
         height:65px;
@@ -291,10 +292,13 @@
     }
 
     .js--contact,.contact span{
-        font-size: 10px;
+        font-size: 13px;
     }
     #quot{
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .contact{
+     padding: 10px 0;
     }
 
 }
