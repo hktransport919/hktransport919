@@ -34,17 +34,17 @@ $(document).ready(function(){
       $('#js--ico1').waypoint(function(direction) {
         $('#js--ico1').addClass('animated zoomIn');
       },{
-        offset:'90%'
+        offset:'100%'
       });
       $('#js--ico2').waypoint(function(direction) {
         $('#js--ico2').addClass('animated zoomIn');
       },{
-        offset:'90%'
+        offset:'100%'
       });
       $('#js--ico3').waypoint(function(direction) {
         $('#js--ico3').addClass('animated zoomIn');
       },{
-        offset:'90%'
+        offset:'100%'
       });
       $('.js--contact').waypoint(function(direction) {
         $('.js--contact').addClass('animated zoomIn');
@@ -52,7 +52,7 @@ $(document).ready(function(){
         offset:'90%'
       });
       /**************** 
-      Form Submission
+      Form Submission & Validation
      ******************/
       (function() {
         'use strict';
@@ -71,4 +71,37 @@ $(document).ready(function(){
           });
         }, false);
       })();
+   
 });
+ /**************** 
+      Window Resize
+     ******************/
+    jQuery(document).ready(function($) {
+      var alterClass = function() {
+        var ww = document.body.clientWidth;
+        if (ww < 1023) {
+          $('.js--cont').removeClass('col-md-4');
+          $('.js--cont').addClass('col-md-5');  
+        }else if (ww >= 1023) {
+          $('.js--cont').removeClass('col-md-5');
+          $('.js--cont').addClass('col-md-4');
+        };
+        if (ww < 767) {
+          $('.js--para').removeClass('col-sm-5');
+          $('.js--para').removeClass('col');
+          $('.js--tag').removeClass('container');
+          $('#block').removeClass('row');
+          $('#block').addClass('flex-column');
+        }else if (ww >= 701) {
+          $('.js--para').addClass('col-sm-5');
+          $('.js--tag').addClass('container');
+          $('#block').addClass('row');
+          $('#block').removeClass('flex-column');
+        };
+      };
+      $(window).resize(function(){
+        alterClass();
+      });
+      //Fire it when the page first loads:
+      alterClass();
+    });
