@@ -255,6 +255,18 @@ nav{
 }
 .about-main p{
     padding-top: 10px;
+    font-size: 19px;
+}
+.mission,.vision{
+   background-position: center center;
+  
+}
+
+.vision div,.mission div{
+    height: 560px;
+    width:100%;
+    display: block;
+    padding-top: 80px;
 }
 /*********************
     Animation
