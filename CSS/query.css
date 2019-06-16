@@ -15,7 +15,7 @@
     #para h1{
         font-size: 28px;
     }
-    #para p,.tag p,.ico p{
+    #para p,.tag p,.ico p,.vision p{
         font-size: 15px;
     }
     .truck img{
@@ -23,7 +23,7 @@
         width: 495px;
         margin-left: 13%;
     }
-    .tag h1{
+    .tag h1,.vision h1{
         font-size: 36px;
     }
     .tag hr{
@@ -59,7 +59,7 @@
     #para h1{
         font-size: 24px;
     }
-    #para p,.tag p,.ico p{
+    #para p,.tag p,.ico p,.vision p{
         font-size: 15px;
     }
     .truck img{
@@ -67,7 +67,7 @@
         width: 410px;
         margin-left: 7%;
     }
-    .tag h1{
+    .tag h1,.vision h1{
         font-size: 30px;
     }
     .tag hr{
@@ -211,12 +211,13 @@
     #para h1{
         font-size: 20px;
     }
-    #para p,.tag p,.ico p{
+    #para p,.tag p,.ico p,.vision p{
         font-size: 12.5px;
     }
     .adv{
         background: linear-gradient(180deg, white 97%, #e60202 97%,#e60202 98%, rgb(25, 0, 117) 94%);
     }
+   
     .tag h1{
         padding-top: 10px;
         padding-bottom: 0px;
@@ -299,6 +300,9 @@
     }
     .contact{
      padding: 10px 0;
-    }
+    }  
 
+     .vis h1,.mis h1{
+        font-size: 20px;
+    }
 }

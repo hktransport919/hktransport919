@@ -257,12 +257,12 @@ nav{
     padding-top: 10px;
     font-size: 19px;
 }
-.mission,.vision{
+.mis,.vis{
    background-position: center center;
   
 }
 
-.vision div,.mission div{
+.vis div,.mis div{
     height: 560px;
     width:100%;
     display: block;
