@@ -246,17 +246,26 @@ nav{
 .fas{
     margin-top: 6px;
 }
-
+/*********************
+    About Us Page
+***********************/
+.about-main{
+    text-align: center;
+    padding-top: 3%;
+}
+.about-main p{
+    padding-top: 10px;
+}
 /*********************
     Animation
 ***********************/
 
-.js--box1,.js--box2,
+.js--box1,.js--box2,.js--contact,
 .js--para,.js--tag,.js--partners{
     opacity: 0;
     animation-duration: 1s;
 }
-.js--box1.animated,.js--box2.animated,
+.js--box1.animated,.js--box2.animated,.js--contact.animated,
 .js--para.animated,.js--tag.animated,.js--partners.animated{
     opacity: 1;
 

@@ -14,12 +14,12 @@ $(document).ready(function(){
     $('.js--para').waypoint(function(direction) {
         $('.js--para').addClass('animated fadeInLeft');
       },{
-        offset:'50%'
+        offset:'80%'
       });
       $('.js--tag').waypoint(function(direction) {
         $('.js--tag').addClass('animated fadeInUp');
       },{
-        offset:'50%'
+        offset:'90%'
       });
       $('.js--box1').waypoint(function(direction) {
         $('.js--box1').addClass('animated fadeInDown');
@@ -34,17 +34,22 @@ $(document).ready(function(){
       $('#js--ico1').waypoint(function(direction) {
         $('#js--ico1').addClass('animated zoomIn');
       },{
-        offset:'50%'
+        offset:'90%'
       });
       $('#js--ico2').waypoint(function(direction) {
         $('#js--ico2').addClass('animated zoomIn');
       },{
-        offset:'50%'
+        offset:'90%'
       });
       $('#js--ico3').waypoint(function(direction) {
         $('#js--ico3').addClass('animated zoomIn');
       },{
-        offset:'50%'
+        offset:'90%'
+      });
+      $('.js--contact').waypoint(function(direction) {
+        $('.js--contact').addClass('animated zoomIn');
+      },{
+        offset:'90%'
       });
       /**************** 
       Form Submission
