@@ -42,8 +42,12 @@ nav{
     margin-top: 10px;
 }
 nav img{
-    height: 0;
-    width: 0;
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+.mobile-nav{
+    display: none;
 }
 .main-nav{
     float: left;
@@ -69,6 +73,11 @@ nav img{
 nav{
     padding: 2px 0;
     background-color: aliceblue;
+}
+
+.nav-icon{
+    float: left;
+    cursor: pointer;
 }
 
 

@@ -51,6 +51,12 @@ $(document).ready(function(){
       },{
         offset:'90%'
       });
+
+      $(".js--nav").click(function( event ){
+        var nav=$('.web-nav');
+          nav.slideToggle(200);
+        // nav.css('display',"block");
+      });
       /**************** 
       Form Submission & Validation
      ******************/
@@ -87,24 +93,18 @@ $(document).ready(function(){
           $('.js--cont').addClass('col-md-4');
         };
         if (ww < 767) {
+          $('.heading').removeClass('d-flex');
           $('.js--para').removeClass('col-sm-5');
           $('.js--para').removeClass('col');
           $('.js--tag').removeClass('container');
           $('#block').removeClass('row');
           $('#block').addClass('flex-column');
         }else if (ww >= 767) {
+          $('.heading').addClass('d-flex');
           $('.js--para').addClass('col-sm-5');
           $('.js--tag').addClass('container');
           $('#block').addClass('row');
           $('#block').removeClass('flex-column');
-        };
-        if (ww < 480) {
-          $('.heading').removeClass('d-flex');
-          $('.heading').addClass('text-center');  
-
-        }else if (ww >= 480) {
-          $('.heading').removeClass('text-center');
-          $('.heading').addClass('d-flex');
         };
       };
 
