@@ -71,7 +71,7 @@ nav img{
 }
 
 nav{
-    padding: 2px 0;
+    padding: 0px 0;
     background-color: aliceblue;
 }
 
@@ -112,17 +112,17 @@ nav{
 }
 .content div{
     display: block;
-    vertical-align: top;
 }
 .box1{
     padding-left: 10%;
     padding-top: 4%;
+    z-index: 0;
 }
 .box2{
     padding-left: 15%;
 }
 #blue{
-    vertical-align: top 
+    vertical-align: top; 
 }
 #white{
     vertical-align: top;
@@ -282,12 +282,13 @@ nav{
 ***********************/
 
 .js--box1,.js--box2,.js--contact,
-.js--para,.js--tag,.js--partners{
+.js--para,.js--tag,.js--partners,.js--web-nav{
     opacity: 0;
     animation-duration: 1s;
 }
 .js--box1.animated,.js--box2.animated,.js--contact.animated,
-.js--para.animated,.js--tag.animated,.js--partners.animated{
+.js--para.animated,.js--tag.animated,.js--partners.animated
+{
     opacity: 1;
 
 }
@@ -297,4 +298,10 @@ nav{
 }
 #js--ico1.animated,#js--ico2.animated,#js--ico3.animated{
     opacity: 1;
+}
+
+.js--web-nav.animated{
+    opacity: 1;
+    animation-duration: 0.5s;
+    display: block;
 }

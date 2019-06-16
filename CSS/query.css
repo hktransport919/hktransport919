@@ -150,11 +150,22 @@
     .heading,.web-nav{
         display: none;
     }
+    /* .m-nav{
+        width: 200px;
+        box-shadow: 2px;
+        
+    }
+    .m-nav ul{
+        background: white;
+        margin: 0;
+    } */
     nav{
+        background-color: white;
         margin-top: 0;
     }
     .mobile-nav{
         display: block;
+        background-color: aliceblue;
     }
     .main-nav{
         float: left;

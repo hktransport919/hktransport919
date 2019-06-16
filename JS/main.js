@@ -54,8 +54,9 @@ $(document).ready(function(){
 
       $(".js--nav").click(function( event ){
         var nav=$('.web-nav');
-          nav.slideToggle(200);
-        // nav.css('display',"block");
+          // nav.toggleClass('animated slideInLeft');
+        //  nav.toggle('display',"block");
+        nav.slideToggle(200);
       });
       /**************** 
       Form Submission & Validation
