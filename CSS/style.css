@@ -110,7 +110,7 @@ nav{
     width:100%;
     font-size:0;
     line-height: 0;
-    vertical-align: middle;
+    
     display: block;
 }
 .content div{
@@ -136,6 +136,7 @@ nav{
 ***********************/
 .para1{
     background-color: floralwhite;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(91%, white), color-stop(85%, #e60202),color-stop(94%, #e60202), color-stop(94%, rgb(25, 0, 117)));
     background: linear-gradient(180deg, white 91%, #e60202 85%,#e60202 94%, rgb(25, 0, 117) 94%);
 }
 #para{
@@ -167,6 +168,7 @@ nav{
 .adv{
     text-align: center;
     padding-top: 3%;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, white), color-stop(90%, #e60202),color-stop(96%, #e60202), color-stop(94%, rgb(25, 0, 117)));
     background: linear-gradient(180deg, white 94%, #e60202 90%,#e60202 96%, rgb(25, 0, 117) 94%);
 }
 .tag h1{
@@ -270,9 +272,11 @@ nav{
     font-size: 19px;
 }
 .vis{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.7))),url(../Images/Vision.jpg);
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Vision.jpg);
 }
 .mis{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.7))),url(../Images/Mission1.jpg);
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Mission1.jpg);
 }
 
@@ -295,7 +299,8 @@ nav{
 .js--box1,.js--box2,.js--contact,
 .js--para,.js--tag,.js--partners,.js--web-nav{
     opacity: 0;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
 }
 .js--box1.animated,.js--box2.animated,.js--contact.animated,
 .js--para.animated,.js--tag.animated,.js--partners.animated
@@ -305,7 +310,8 @@ nav{
 }
 #js--ico1,#js--ico2,#js--ico3{
     opacity: 0;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
 }
 #js--ico1.animated,#js--ico2.animated,#js--ico3.animated{
     opacity: 1;
@@ -313,6 +319,7 @@ nav{
 
 .js--web-nav.animated{
     opacity: 1;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
     display: block;
 }
