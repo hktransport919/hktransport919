@@ -55,16 +55,24 @@ $(document).ready(function(){
       $(".js--nav").click(function( event ){
         var nav=$('.sidenav');
         var icon=$('.js--nav i');
-         nav.toggleClass('animated slideInLeft');
+        // nav.css('display','block');
+
+         
         //  nav.toggle('display',"block");
         // nav.slideToggle(200);
 
         if(icon.hasClass('fa-bars')){
           icon.removeClass('fa-bars');
           icon.addClass('fa-times');
+          nav.removeClass('animated slideOutRight');
+          nav.addClass('animated slideInRight');
+          nav.css('display','block');
         }else{
           icon.removeClass('fa-times');
           icon.addClass('fa-bars');
+          nav.removeClass('animated slideInRight');
+          nav.addClass('animated slideOutRight');
+         
         }
       });
       /**************** 
