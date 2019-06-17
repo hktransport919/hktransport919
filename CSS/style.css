@@ -286,6 +286,10 @@ nav{
    background-attachment: fixed;
    color: white;
 }
+.mis hr,.vis hr{
+    width: 40%;
+    border-top: 2px solid rgb(255, 0, 0)
+}
 
 .vis div,.mis div{
     height: 560px;

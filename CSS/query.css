@@ -16,7 +16,7 @@
         font-size: 28px;
     }
     #para p,.tag p,.ico p,.vision p{
-        font-size: 15px;
+        font-size: 16px;
     }
     .truck img{
         height: 280px;
@@ -60,7 +60,7 @@
         font-size: 24px;
     }
     #para p,.tag p,.ico p,.vision p{
-        font-size: 15px;
+        font-size: 16px;
     }
     .truck img{
         height: 230px;
@@ -220,18 +220,31 @@
     }
     #para{
         padding-top: 70px;
+        
+    }
+    #para h1{
+        font-size: 32px;
+        line-height: 1.3em;
     }
     .truck img{
         height: 230px;
         width: 410px;
-        margin-left: 40%;
+        margin:0 10%;
     }
+
+    .tag hr{
+        width: 60%;
+        border-top: 2px solid rgb(25, 0, 117);
+    }
+
     #ico1,#ico2,#ico3{
         padding:0 80px;
     }
     #cont-no{
         margin-top:5px;
     }
+
+
 }
 
 /* Small phones from : 0 to 480px */
@@ -258,10 +271,14 @@
         height: 36px;
     }
     #para h1{
-        font-size: 20px;
+        font-size: 32px;
+        line-height: 1.3em;
     }
-    #para p,.tag p,.ico p,.vision p{
-        font-size: 12.5px;
+    
+    #para p,.tag p,.vision p{
+        font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
     }
     .adv{
         background: -webkit-gradient(linear, left top, left bottom, color-stop(97%, white), color-stop(97%, #e60202),color-stop(98%, #e60202), color-stop(94%, rgb(25, 0, 117)));
@@ -271,21 +288,25 @@
     .tag h1{
         padding-top: 10px;
         padding-bottom: 0px;
-        font-size: 20px;
+        font-size: 28px;
+        line-height: 1.2;
        
     }
     .tag p{
         padding-top: 0px;
     }
-    .tag hr{
-        width: 40px;
-        border-top: 4px solid rgb(25, 0, 117);
-    }
+    
     .ico h3,.contact h3{
-        font-size: 20px;
+        font-size: 21px;
+        line-height: 1.35;
+        font-weight: 400;
     }
     #ico1,#ico2,#ico3{
         padding:0 40px;
+    }
+    #js--ico1,#js--ico2,#js--ico3{
+        height: 100px;
+        width:170px;
     }
     /*********************
         Clients
@@ -337,10 +358,7 @@
         margin-right: 15px;
         margin-top: 5px;
     }
-    #js--ico1,#js--ico2,#js--ico3{
-        height: 75px;
-        width:120px;
-    }
+    
 
     .js--contact,.contact span{
         font-size: 13px;
