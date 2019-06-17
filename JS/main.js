@@ -66,7 +66,7 @@ $(document).ready(function(){
           icon.addClass('fa-times');
           nav.removeClass('animated slideOutRight');
           nav.addClass('animated slideInRight');
-          nav.css('display','block');
+          // nav.css('display','block');
         }else{
           icon.removeClass('fa-times');
           icon.addClass('fa-bars');

@@ -20,8 +20,11 @@ body{
      padding-left: 1.3%;
 }
 .logo img{
-    height: 45px;
-    width: 400px;
+    /* height: 45px;
+    width: 400px; */
+    height: 30px;
+    width: 250px;
+    margin-top: 2%;
 }
 .call{
     padding-right: 7%;
@@ -302,7 +305,7 @@ nav{
 ***********************/
 
 .js--box1,.js--box2,.js--contact,
-.js--para,.js--tag,.js--partners,.js--web-nav{
+.js--para,.js--tag,.js--partners,.js--m-nav{
     opacity: 0;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
@@ -322,7 +325,7 @@ nav{
     opacity: 1;
 }
 
-.js--web-nav.animated{
+.js--m-nav.animated{
     opacity: 1;
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
