@@ -54,9 +54,18 @@ $(document).ready(function(){
 
       $(".js--nav").click(function( event ){
         var nav=$('.web-nav');
+        var icon=$('.js--nav i');
           // nav.toggleClass('animated slideInLeft');
         //  nav.toggle('display',"block");
         nav.slideToggle(200);
+
+        if(icon.hasClass('fa-bars')){
+          icon.removeClass('fa-bars');
+          icon.addClass('fa-times');
+        }else{
+          icon.removeClass('fa-times');
+          icon.addClass('fa-bars');
+        }
       });
       /**************** 
       Form Submission & Validation
