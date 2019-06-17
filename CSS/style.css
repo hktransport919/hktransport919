@@ -79,7 +79,8 @@ nav{
 }
 
 .nav-icon{
-    float: left;
+    float: right;
+    margin-right: 10px;
     cursor: pointer;
 }
 
