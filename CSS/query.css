@@ -151,6 +151,9 @@
     .heading .call a,.web-nav{
         display: none;
     }
+    .heading{
+       padding-top: 0;
+    }
     .m-head{
         display: block;
         color: white;
