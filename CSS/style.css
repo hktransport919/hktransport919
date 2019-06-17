@@ -266,9 +266,17 @@ nav{
     padding-top: 10px;
     font-size: 19px;
 }
+.vis{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Vision.jpg);
+}
+.mis{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Mission1.jpg);
+}
+
 .mis,.vis{
    background-position: center center;
-  
+   background-attachment: fixed;
+   color: white;
 }
 
 .vis div,.mis div{
