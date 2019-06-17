@@ -151,6 +151,9 @@
     .heading .call a,.web-nav{
         display: none;
     }
+    .heading{
+        padding: 0;
+    }
     .mobile-nav{
         display: block;
 
@@ -175,7 +178,7 @@
     } */
     nav{
         background-color: white;
-       margin:5px 0;
+       margin: 2px 0;
 
     }
     
@@ -193,8 +196,8 @@
     border: 0px;
     }
     nav img{
-        height: 35px;
-        width: 250px;
+        height: 37px;
+        width: 270px;
         visibility: visible;
     }
     .nav-icon{
