@@ -156,10 +156,10 @@
     }
     .mobile-nav{
         display: block;
-
+        padding: 5px 0;
     }
    .sidenav{
-    height: 90%;
+    height: 100%;
     width: 225px;
     position: fixed;
     z-index: 999;
@@ -170,7 +170,7 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding-top: 30px;
-   
+    border-left:  3px solid rgb(25, 0, 117); 
     }
      /* 
     .m-nav ul{
@@ -180,6 +180,7 @@
     nav{
         background-color: white;
         margin: 2px 0;
+        
 
     }
     
@@ -205,11 +206,11 @@
         height: 23px;
         width: 170px;
         visibility: visible;
+        margin-left: 2%;
     }
     .nav-icon{
         display: inline-block;
         padding-left: 10px;
-        padding-top: 5px;
     }
     .m-cont{
         font-size: small;
@@ -258,11 +259,13 @@
 /* Small phones from : 0 to 480px */
 @media only screen  and (max-width:480px){
     
-   
+   nav{
+       margin: 0;
+   }
     .truck img{
         height: 170px;
         width: 270px;
-        margin-left: 5%;
+        margin:0 5%;
     }
     .content{
             height: 400px;
