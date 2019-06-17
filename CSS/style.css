@@ -12,6 +12,7 @@ body{
 /*********************
     Heading
 ***********************/
+
 .heading{
     padding-top: 0.5%;
 }
@@ -32,7 +33,9 @@ body{
 .call a{
     font-size: 16px;
 }
-
+.m-head,.m-head a{
+    display: none;
+}
 /*********************
     Navigation
 ***********************/
@@ -46,7 +49,7 @@ nav img{
     width: 0px;
     visibility: hidden;
 }
-.mobile-nav{
+.mobile-nav,.sidenav{
     display: none;
 }
 .main-nav{

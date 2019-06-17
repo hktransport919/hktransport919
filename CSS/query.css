@@ -147,14 +147,37 @@
 
 /* Small phones to small tablets: 481px to 767px */
 @media only screen  and (max-width:767px){
-    .heading,.web-nav{
+    .heading .logo,.heading .call img,
+    .heading .call a,.web-nav{
         display: none;
     }
-    /* .m-nav{
-        width: 200px;
-        box-shadow: 2px;
-        
+    .m-head{
+        display: block;
+        color: white;
+        background-color: #0e008d;
+        font-size: 13px;
+        padding: 4px 0;
     }
+    .m-head a{
+        display: block;
+    }
+    .mobile-nav{
+        display: block;
+        background-color: aliceblue;
+    }
+   .sidenav{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+     /* 
     .m-nav ul{
         background: white;
         margin: 0;
@@ -163,10 +186,7 @@
         background-color: white;
         margin-top: 0;
     }
-    .mobile-nav{
-        display: block;
-        background-color: aliceblue;
-    }
+    
     .main-nav{
         float: left;
         padding-left: 5px;
