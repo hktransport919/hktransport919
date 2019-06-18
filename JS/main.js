@@ -6,11 +6,11 @@ $(document).ready(function(){
     //         $('nav').removeClass('sticky-top'); 
     //     }
     // }); 
-    $('.js--fixed-nav').waypoint(function(direction) {
-      $('nav').toggleClass('fixed-theme');
-    },{
-      offset:'35%'
-    });
+    // $('.js--fixed-nav').waypoint(function(direction) {
+    //   $('nav').toggleClass('fixed-theme');
+    // },{
+    //   offset:'35%'
+    // });
     $('.js--partners').waypoint(function(direction) {
         $('.js--partners').addClass('animated pulse');
       },{
