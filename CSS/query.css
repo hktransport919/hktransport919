@@ -156,11 +156,13 @@
     }
     .mobile-nav{
         display: block;
-        padding: 5px 0;
+        padding: 2px 0;
+        color: black;
+    text-decoration: none;
     }
    .sidenav{
     height: 100%;
-    width: 225px;
+    width: 250px;
     position: fixed;
     z-index: 999;
     top: 0;
@@ -169,8 +171,8 @@
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    padding-top: 30px;
-    border-left:  2px solid rgb(0, 0, 0); 
+    padding-top: 50px;
+    border-left:  1.5px solid rgb(97, 97, 97); 
     }
      /* 
     .m-nav ul{
@@ -179,8 +181,7 @@
     } */
     nav{
         background-color: white;
-        margin: 2px 0;
-        padding: 2px 0
+        padding: 5px 0;
 
     }
     
@@ -193,7 +194,7 @@
     .main-nav li{
         display: block;
         width: 100px;
-        padding: 5px 0;
+        padding: 10px 0;
     }
     .main-nav li a:link,
     .main-nav li a:visited{
@@ -203,8 +204,8 @@
     nav img{
         /* height: 40px;
         width: 270px; */
-        height: 30px;
-        width: 30px;
+        height: 36px;
+        width: 36px;
         visibility: visible;
         margin-left: 2%;
     }
@@ -214,11 +215,15 @@
     }
     .m-cont{
         font-size: small;
+        color: black;
+    text-decoration: none;
     }
     
     .content{
         height: 400px;
+        padding-top: 10%;
     }
+
     #blue{
         width: 220px;
         height: 55px;
@@ -228,7 +233,7 @@
         height: 55px;
     }
     #para{
-        padding-top: 70px;
+        padding-top: 40px;
         
     }
     #para h1{
@@ -252,7 +257,9 @@
     #cont-no{
         margin-top:5px;
     }
-
+    .vis p,.mis p{
+        font-size: 16px;
+    }
 
 }
 
@@ -263,19 +270,19 @@
        margin: 0;
    }
     .truck img{
-        height: 170px;
-        width: 270px;
-        margin:0 5%;
+        height: 190px;
+    width: 290px;
+        margin:0;
     }
     .content{
             height: 400px;
     }
     #blue{
         width: 150px;
-        height: 35px;
+        height: 36px;
     }
     #white{
-        width: 180px;
+        width: 190px;
         height: 36px;
     }
     #para h1{
@@ -305,7 +312,7 @@
         padding: 0 15px;
     }
     
-    .ico h3,.contact h3{
+    .ico h3{
         font-size: 21px;
         line-height: 1.35;
         font-weight: 400;
@@ -368,18 +375,25 @@
         margin-top: 5px;
     }
     
-
-    .js--contact,.contact span{
-        font-size: 13px;
+    .contact h3{
+        font-size: 25px;
+        line-height: 1.35;
+        font-weight: 400;
+    }
+    .js--contact,.contact span,.contact i{
+        font-size: 15px;
+    }
+    .contact i{
+        padding-top: 2px;
     }
     #quot{
         font-size: 14px;
     }
     .contact{
-     padding: 10px 0;
+     padding: 0px 0;
     }  
 
      .vis h1,.mis h1{
-        font-size: 20px;
+        font-size: 38px;
     }
 }
