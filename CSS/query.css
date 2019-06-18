@@ -183,6 +183,8 @@
         background-color: white;
         padding: 5px 0;
 
+        
+
     }
     
     .main-nav{
@@ -218,7 +220,9 @@
         color: black;
     text-decoration: none;
     }
-    
+    .m-count div span a p{
+        margin-top: 3px;
+    }
     .content{
         height: 400px;
         padding-top: 10%;
@@ -240,10 +244,14 @@
         font-size: 32px;
         line-height: 1.3em;
     }
+    .truck{
+        display: flex;
+    justify-content: center !important;
+    }
     .truck img{
         height: 230px;
         width: 410px;
-        margin:0 10%;
+        margin:0;
     }
 
     .tag hr{
@@ -269,10 +277,12 @@
    nav{
        margin: 0;
    }
+   
     .truck img{
         height: 190px;
     width: 290px;
         margin:0;
+        font-size: 0;
     }
     .content{
             height: 400px;

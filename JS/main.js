@@ -6,6 +6,11 @@ $(document).ready(function(){
     //         $('nav').removeClass('sticky-top'); 
     //     }
     // }); 
+    $('.js--fixed-nav').waypoint(function(direction) {
+      $('nav').toggleClass('fixed-theme');
+    },{
+      offset:'35%'
+    });
     $('.js--partners').waypoint(function(direction) {
         $('.js--partners').addClass('animated pulse');
       },{
@@ -52,29 +57,52 @@ $(document).ready(function(){
         offset:'90%'
       });
 
-      $(".js--nav").click(function( event ){
-        var nav=$('.sidenav');
-        var icon=$('.js--nav i');
-        // nav.css('display','block');
+      /**************** 
+      Sidebar Navigation for Mobile
+     ******************/
+      var nav=$('.sidenav');
+      var icon=$('.js--nav i');
+      // Menu Icon In SIde Bar
+      var menuIcon = function(){
+        icon.removeClass('fa-bars');
+          icon.addClass('fa-times');
+          nav.removeClass('animated slideOutRight');
+          nav.addClass('animated slideInRight');
+          $('body').css('overflow','hidden');
+          // nav.css('display','block');
+      };
+      // Close Icon In SIde Bar
+      var closeIcon = function(){
+        icon.removeClass('fa-times');
+        icon.addClass('fa-bars');
+        nav.removeClass('animated slideInRight');
+        nav.addClass('animated slideOutRight');
+        $('body').css('overflow','');
+      };
 
-         
+      $(".js--nav").click(function( event ){
+        
+        // nav.css('display','block');
         //  nav.toggle('display',"block");
         // nav.slideToggle(200);
 
         if(icon.hasClass('fa-bars')){
-          icon.removeClass('fa-bars');
-          icon.addClass('fa-times');
-          nav.removeClass('animated slideOutRight');
-          nav.addClass('animated slideInRight');
-          // nav.css('display','block');
+          menuIcon();
         }else{
-          icon.removeClass('fa-times');
-          icon.addClass('fa-bars');
-          nav.removeClass('animated slideInRight');
-          nav.addClass('animated slideOutRight');
-         
+          closeIcon();
         }
       });
+      /**************** 
+      Scroll Navigation
+     ******************/
+      $('.js--scroll-to-cont').click(function(){
+        closeIcon();
+        $('html ,body').animate({
+          scrollTop: $('.contact').offset().top
+        },1000);
+      });
+     
+
       /**************** 
       Form Submission & Validation
      ******************/
@@ -115,6 +143,7 @@ $(document).ready(function(){
         if (ww < 767) {
           $('.heading').removeClass('d-flex');
            $('nav').addClass('shadow');
+            $('.mobile-nav').addClass('d-flex');
           $('.js--para').removeClass('col-sm-5');
           $('.js--para').removeClass('col');
           $('.js--tag').removeClass('container');
@@ -122,6 +151,7 @@ $(document).ready(function(){
           $('#block').addClass('flex-column');
         }else if (ww >= 767) {
           $('.heading').addClass('d-flex');
+           $('.mobile-nav').removeClass('d-flex');
           $('nav').removeClass('shadow');
           $('.js--para').addClass('col-sm-5');
           $('.js--tag').addClass('container');

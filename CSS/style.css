@@ -9,12 +9,14 @@ body{
     font-family: "Montserrat",sans-serif;
     
 }
+
 /*********************
     Heading
 ***********************/
 
 .heading{
     padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 .logo{
      padding-left: 5%;
@@ -35,6 +37,9 @@ body{
 }
 .call a{
     font-size: 16px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    
 }
 .m-head,.m-head a{
     display: none;
@@ -45,7 +50,7 @@ body{
 
 /* Main Navigation*/
 nav{
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 nav img{
     height: 0px;
@@ -59,10 +64,12 @@ nav img{
     float: left;
     list-style: none;
     margin-top: 12px;
+    
 }
 .main-nav li{
     display: inline-block;
     margin-left:40px;   
+    
 }
 .main-nav li a:link,
 .main-nav li a:visited{
@@ -78,7 +85,24 @@ nav img{
 
 nav{
     padding: 0px 0;
+    /* background-color: aliceblue; */
+    /* changes */
+    position: absolute;
+    top: 66px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    /* background-color: rgba(223, 156, 156, 0.075); */
+    background: linear-gradient( rgba(255, 255, 255, 1)40%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.04) 90%, rgba(255, 254, 254,0.04) 90%);
+    
+}
+nav .div{
+    position: relative;
+}
+.fixed-theme{
+    top: 0;
     background-color: aliceblue;
+    position: fixed;
 }
 
 .nav-icon{
@@ -156,7 +180,7 @@ nav{
     font-size: 16px;
 }
 .truck{
-    padding-top: 8%;
+    padding-top: 12%;
    /* padding-right: 10%; */
 }
 .truck img{
