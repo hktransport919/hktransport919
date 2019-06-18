@@ -167,7 +167,7 @@
     z-index: 999;
     top: 50px;
     right: 0;
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
