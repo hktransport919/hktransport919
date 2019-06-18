@@ -148,7 +148,7 @@
 /* Small phones to small tablets: 481px to 767px */
 @media only screen  and (max-width:767px){
     .heading .logo,.heading .call img,
-    .heading .call a,.web-nav{
+    .heading .call div,.web-nav{
         display: none;
     }
     .heading{
@@ -180,7 +180,7 @@
     nav{
         background-color: white;
         margin: 2px 0;
-        
+        padding: 2px 0
 
     }
     
@@ -203,8 +203,8 @@
     nav img{
         /* height: 40px;
         width: 270px; */
-        height: 23px;
-        width: 170px;
+        height: 30px;
+        width: 30px;
         visibility: visible;
         margin-left: 2%;
     }
@@ -296,12 +296,13 @@
     .tag h1{
         /* padding-top: 10px;
         padding-bottom: 0px; */
-        font-size: 28px;
+        font-size: 24px;
         line-height: 1.2;
        padding: 10px 50px 0;
     }
     .tag p{
         padding-top: 0px;
+        padding: 0 15px;
     }
     
     .ico h3,.contact h3{
@@ -310,11 +311,11 @@
         font-weight: 400;
     }
     #ico1,#ico2,#ico3{
-        padding:0 40px;
+        padding:0 0;
     }
     #js--ico1,#js--ico2,#js--ico3{
-        height: 100px;
-        width:170px;
+        height: 120px;
+        width:185px;
     }
     /*********************
         Clients
