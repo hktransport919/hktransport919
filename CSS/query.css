@@ -164,7 +164,7 @@
     height: 100%;
     width: 250px;
     position: fixed;
-    z-index: 999;
+    z-index: 1002;
     top: 50px;
     right: 0;
     background-color: rgb(255, 255, 255);
