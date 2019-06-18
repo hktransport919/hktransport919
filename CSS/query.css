@@ -286,6 +286,8 @@
     }
     .content{
             height: 400px;
+            /* changes */
+            margin-top: 2rem;
     }
     #blue{
         width: 150px;
