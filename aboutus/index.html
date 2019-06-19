@@ -20,12 +20,12 @@
     <div class="heading d-flex justify-content-between">
         <div class="logo">
           <a href="https://hktransport919.github.io">
-              <img src="..\Images\HK Web.png" alt="Logo">
+              <img src="../Images/HK_Web.png" alt="Logo">
           </a>
         </div>
         <div class="call d-flex flex-row align-items-center">
-          <div class=""><img src="..\Images\Call Blue Logo.png" alt="Call"> </div>
-          <div class=""><a style="color: #3b3b3b;" href="tel: 7448115919">
+          <div class=""><img src="../Images/Call_Logo.png" alt="Call"> </div>
+          <div class=""><a style="color: #3b3b3b;" href="tel:7448115919">
               <span>7448 115919</span>
             </a></div>
             
@@ -36,10 +36,10 @@
             <nav class="sticky-top">
                 <div class="d-flex flex-column">
                     <div class="mobile-nav d-flex justify-content-between">
-                        <img src="..\Images\HK Mob.png" alt="">
+                        <img src="../Images/HK_Mob.png" alt="">
                         <div class="align-self-center">
                             <i class="fas fa-phone-alt"></i> 
-                          <span class="ml-1 call"><a style="color: #3b3b3b;" href="tel: 7448115919">
+                          <span class="ml-1 call"><a style="color: #3b3b3b;" href="tel:7448115919">
                               <span>7448 115919</span>
                             </a></span>
                         </div>
@@ -107,7 +107,7 @@
                         <div class="mt-4 d-flex">
                             <i class="fas fa-phone-alt "></i> 
                           <span class="ml-3 col flex-grow-1 call" id="cont-no">
-                              <a style="color: #3b3b3b;" href="tel: +917448115919">
+                              <a style="color: #3b3b3b;" href="tel:+917448115919">
                                   <span>+91 7448115919</span>
                                 </a>
                           </span>
@@ -125,7 +125,7 @@
                       <div class="col-md-7 ">
                     <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                         <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
-                        <form id="contact-form gform" method="POST" action="" class="needs-validation" novalidate>
+                        <form id="contact-form gform" method="POST" action="../php/mailer.php" class="needs-validation" novalidate>
                           <div class="row">
                             <div class="col-md-6 mb-3">
                               <input type="name" class="form-control" id="name" name="name" placeholder="Name" value="" required>
@@ -134,7 +134,7 @@
                               </div>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" id="PhoneNo" name="PhoneNo" placeholder="Phone Number" value="" required>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" value="" required>
                                 <div class="invalid-feedback">
                                   Valid Number is required.
                                 </div>
@@ -177,21 +177,25 @@
                           </ul>
                         </div> 
                         <div class="m-cont">
-                          
+                
                           <div class="mt-2 d-flex">
-                              <i class="fas fa-phone-alt ml-2 "></i> 
-                            <span class="col flex-grow-1"><p>+91 7448115919</p></span>
+                              <i class="fas fa-phone-alt ml-3 "></i> 
+                            <p class="col flex-grow-1 call">
+                              <a style="color: #3b3b3b;" href="tel:7448115919">
+                                7448 115919
+                              </a></p>
                           </div>
                           
                           <div class="mt-2 d-flex">
-                              <i class="fas fa-envelope ml-2"></i>
-                              <span class="col flex-grow-1" ><p>hktransport919@gmail.com</p></span>
+                              <i class="fas fa-envelope ml-3"></i>
+                              <p class="col flex-grow-1" >hktransport919@gmail.com</p>
                           </div>
                           <div class="mt-2 d-flex ">
-                              <i class="fas fa-map-marker-alt ml-2"></i>
-                            <span class="col flex-grow-1">
-                             <p>Shop No.4, Gangotri Complex, Wani Peth, Khed, Ratnagiri <br>Pin Code - 415709</p> 
-                            </span>
+                              <i class="fas fa-map-marker-alt ml-3"></i>
+                            <p class="col flex-grow-1">
+                             Shop No.4, Gangotri Complex, Wani Peth, Khed, Ratnagiri <br>Pin Code - 415709
+                            </p> 
+              
                           </div>
                         </div>
                     </div>

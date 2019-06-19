@@ -53,8 +53,9 @@
     .content{
         height: 500px;
     }
+    
     #para{
-        padding-top: 10px;
+        padding: 2% 2%;
     }
     #para h1{
         font-size: 24px;
@@ -62,10 +63,13 @@
     #para p,.tag p,.ico p,.vision p{
         font-size: 16px;
     }
+    .truck{
+        padding-top: 15%;
+    }
     .truck img{
         height: 230px;
         width: 410px;
-        margin-left: 7%;
+        margin:0 ;
     }
     .tag h1,.vision h1{
         font-size: 30px;
@@ -241,6 +245,7 @@
         font-size: 32px;
         line-height: 1.3em;
     }
+    
     .truck{
         display: flex;
     justify-content: center !important;
