@@ -151,6 +151,7 @@
 
 /* Small phones to small tablets: 481px to 767px */
 @media only screen  and (max-width:767px){
+    
     .heading .logo,.heading .call img,
     .heading .call div,.web-nav{
         display: none;
@@ -158,11 +159,16 @@
     .heading{
         padding: 0;
     }
+    
     .mobile-nav{
-        display: block;
+        /* display: block; */
+        display:flex;
         padding: 2px 0;
         color: black;
         text-decoration: none;
+    }
+    .m-nav-call{
+        display: flex;
     }
    .sidenav{
     height: 100%;
@@ -173,8 +179,8 @@
     right: 0;
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0s;
+    transition: 0s;
     
     border-left:  1.5px solid rgb(97, 97, 97); 
     }
@@ -189,19 +195,19 @@
     }
     
     .main-nav{
-        float: right;
-        margin-right: 40%;
+        /* float: right;
+        margin-right: 40%; */
         padding: 0;
     
     }
     .main-nav li{
         display: block;
-        width: 100px;
-        padding: 10px 0;
+        width: 100%;
+        padding: 2px 0;
     }
     .main-nav li a:link,
     .main-nav li a:visited{
-        
+        display: block;
         border: 0px;
     }
     nav img{
@@ -238,7 +244,7 @@
         height: 55px;
     }
     #para{
-        padding-top: 40px;
+            padding: 40px 20px 0;
         
     }
     #para h1{

@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/Images/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/Images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/Images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HK Transport</title>
-    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/query.css">
-    
-    
     <!-- loading -->
     <!-- <link rel="stylesheet" href="./CSS/loader.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script>
-            $(document).ready(function() {
-                  window.onload = function () {
-                    setTimeout(function(){
-                      $('body').addClass('loaded');
-                    }, 2000);
-                  }  
-            });
-    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
 
     <!-- animation -->
     <link rel="stylesheet" href="./CSS/animate.css" />
@@ -37,78 +35,49 @@
         
         <div class="heading d-flex justify-content-between">
             <div class="logo">
-              <a href="https://hktransport919.github.io">
+              <a href="./">
                   <img src="./Images/HK_Web.png" alt="Logo">
               </a>
             </div>
             <div class="call d-flex flex-row align-items-center">
               <div class=""><img src="./Images/Call_Logo.png" alt="Call"> </div>
               <div class=""><a style="color: #3b3b3b;" href="tel:7448115919">
-                  <span>7448115919</span>
+                  <span>+917448115919</span>
                 </a>
               </div>
-                
-                <!-- <img src=".\Images\Call Blue Logo.png" alt="Call"> -->
+             
                
             </div> 
 </div>
         <nav class="sticky-top">
           <div class="d-flex flex-column">
-            <div class="mobile-nav d-flex justify-content-between">
+            <div class="mobile-nav justify-content-between">
               <img src="./Images/HK_Mob.png" alt="">
-              <div class="align-self-center">
+              <div class="align-self-center m-nav-call">
                   <i class="fas fa-phone-alt"></i> 
                 <span class="ml-1 call"><a style="color: #3b3b3b;" href="tel:7448115919">
-                    <span>7448 115919</span>
+                    <span>7448115919</span>
                   </a></span>
               </div>
               <a class="nav-icon js--nav pointer pr-2 align-self-center"><i class="fas fa-bars"></i></a>
               
             </div>
             <div class="web-nav">
-              <ul class="main-nav js--main-nav">
+            <ul class="main-nav js--main-nav">
                   <li><a class="" href="./">Home</a></li>
-                  <li><a class="" href="./">Services</a></li>
                   <li><a class="" href="./">Gallery</a></li>
                   <li><a class="" href="./aboutus/">About Us</a></li>
                   <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
+                  <li><a class="js--scroll-to-cont" href="#">Get Quotation</a></li>
                 </ul>
               </div>
-            <!-- <div class="nav-logo">
-                
-            </div> -->
+    
             
           </div>
         </nav>
         
         
-            <!-- <ul class="m-nav">
-                <li><a class="" href="#">Home</a></li>
-                <li><a class="" href="#">Services</a></li>
-                <li><a class="" href="#">Gallery</a></li>
-                <li><a class="" href="./about.html">About Us</a></li>
-                <li><a class="" href="#">Contact Us</a></li>
-              </ul> -->
-      
-        <!-- <nav class="navbar sticky-top navbar-expand-lg navbar-light" id="navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
-               <ul class="nav navbar-nav">
-                     <li class="nav-item"><a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a></li>
-                     <li class="nav-item"> <a class="nav-link active" href="#">Services</a></li>
-                     <li class="nav-item"> <a class="nav-link active" href="#">Gallery</a></li>
-                     <li class="nav-item dropdown ">
-                            <a href="#" data-toggle="dropdown" class=" nav-link active">
-                                About Us
-                            </a>       
-                    </li>
-                     <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
-                     
-                 </ul>
-            </div>
-        </nav> -->
+          
         
         <div class="cover" style="background-image: url('./Images/Truck.jpg');">
             <div class="content ">
@@ -203,18 +172,32 @@
                 
                 <div class="mt-4 d-flex">
                     <i class="fas fa-envelope "></i>
-                    <span class="ml-3 col flex-grow-1" id="cont-email">support@hktransport.in</span>
+                    <span class="ml-3 col flex-grow-1" id="cont-email">info@hktransport.in</span>
                 </div>
                 <div class="mt-5 px-5 py-3 js--contact" style="border:2px solid black; font-weight: bold;">
                   We Provide Services From Mumbai, Pune & Ratnagiri To All Over India
                 </div>
               </div>
          
-              <div class="col-md-7 ">
+              <div class="col-md-7 " id="form">
             <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                 <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
                 <form  method="POST" action="./php/mailer.php" class="needs-validation" novalidate>
                   <div class="row">
+                  
+                     <?php
+                      if($_GET['success']== 1){
+                          echo "<div class=\"form-msg success\">
+                          <h5> Thanks for contacting us! We will get back to you soon! </h5>
+                          </div>";
+                      }
+                      if($_GET['success']== -1){
+                          echo "<div class=\"form-msg success\">
+                          <h5> Something went wrong! </h5>
+                          </div>";
+                      }
+                      ?>
+                    
                     <div class="col-md-6 mb-3">
                       <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="" required>
                       <div class="invalid-feedback">
@@ -236,7 +219,7 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                      <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message" required></textarea>
+                      <textarea class="form-control" id="message" rows="5" name="message" placeholder="Provide Load Details Here" required></textarea>
                   </div>
              
                    <hr class="mb-4">
@@ -256,13 +239,13 @@
 
           <div class="sticky-top sidenav js--m-nav">
             <div class="row"> 
-               <ul class="main-nav m-nav  js--main-nav">
-                  <li><a class="" href="./">Home</a></li>
-                  <li><a class="" href="./">Services</a></li>
-                  <li><a class="" href="./">Gallery</a></li>
-                  <li><a class="" href="./aboutus/">About Us</a></li>
-                  <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
-                </ul>
+            <ul class="main-nav m-nav js--main-nav flex-grow-1">
+                <li><a class="" href="./">Home</a></li>
+                <li><a class="" href="./">Gallery</a></li>
+                <li><a class="" href="./aboutus/">About Us</a></li>
+                <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
+                <li><a class="js--scroll-to-mcont" href="#">Get Quotation</a></li>
+               </ul>
               </div> 
               <div class="m-cont">
                 
@@ -276,7 +259,7 @@
                 
                 <div class="mt-2 d-flex">
                     <i class="fas fa-envelope ml-3"></i>
-                    <p class="col flex-grow-1" >support@hktransport.in</p>
+                    <p class="col flex-grow-1" >info@hktransport.in</p>
                 </div>
                 <div class="mt-2 d-flex ">
                     <i class="fas fa-map-marker-alt ml-3"></i>
@@ -287,16 +270,9 @@
                 </div>
               </div>
           </div>
-       
-       
-      
-       
-          <script src="./JS/jquery-3.4.1.min.js"></script>     
- <script data-cfasync="false" src="JS/form.js"></script>      
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="./JS/jquery-3.4.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="JS/bootstrap.min.js"></script>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="JS/jquery.waypoints.min.js"></script>
 <script src="JS/main.js"></script>
 </html>

@@ -9,18 +9,19 @@
 
     // Check the data.(write whole website address)
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ./index.php?success=-1#form");
+        header("Location: https://hktransport.in/index.php?success=-1#form");
         exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "hktransport@daymail.life";
+    $recipient = "hktransport919@gmail.com";
 
     // Set the email subject.
     $subject = "New contact from $name";
 
     // Build the email content.
     $email_content = "Name: $name\n";
+    $email_content .= "Phone: $phone\n";
     $email_content .= "Email: $email\n\n";
     $email_content .= "Message:\n$message\n";
 
@@ -31,6 +32,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code (write whole website address)
-    header("Location: ./index.php?success=1#form");
+    header("Location: https://hktransport.in/index.php?success=1#form");
 
 ?>

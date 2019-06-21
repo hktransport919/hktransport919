@@ -30,6 +30,7 @@ body{
 }
 .call{
     padding-right: 7%;
+    
 }
 .call img{
     height: 40px;
@@ -49,9 +50,7 @@ body{
 ***********************/
 
 /* Main Navigation*/
-nav{
-    /* margin-top: 10px; */
-}
+
 nav img{
     height: 0px;
     width: 0px;
@@ -93,7 +92,7 @@ nav{
     left: 0;
     z-index: 1030;
     /* background-color: rgba(223, 156, 156, 0.075); */
-    /* background: linear-gradient( rgba(255, 255, 255, 1)40%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.04) 90%, rgba(255, 254, 254,0.04) 90%); */ */
+    /* background: linear-gradient( rgba(255, 255, 255, 1)40%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.04) 90%, rgba(255, 254, 254,0.04) 90%); */ 
     
 }
 nav .div{
@@ -181,7 +180,7 @@ nav .div{
     font-size: 16px;
 }
 .truck{
-    padding-top: 12%;
+    padding-top: 7%;
    /* padding-right: 10%; */
 }
 .truck img{
@@ -289,12 +288,31 @@ nav .div{
 .fas{
     margin-top: 6px;
 }
+
+.form-msg{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: black;
+
+}
+.success{
+    background-color: rgba(38, 191,68, 0.8);
+}
+.error{
+   
+        background-color: rgba(209, 46,46, 0.8);
+    
+}
 /*********************
     About Us Page
 ***********************/
 .about-main{
     text-align: center;
     padding-top: 3%;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(255, 100, 100)), to(rgb(255, 255, 128)));
     background: linear-gradient(to right, rgb(255, 100, 100), rgb(255, 255, 128));
 }
 .about-main p{
@@ -333,7 +351,7 @@ nav .div{
 ***********************/
 
 .js--box1,.js--box2,.js--contact,
-.js--para,.js--tag,.js--partners,.js--m-nav{
+.js--para,.js--tag,.js--partners{
     opacity: 0;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
@@ -352,7 +370,9 @@ nav .div{
 #js--ico1.animated,#js--ico2.animated,#js--ico3.animated{
     opacity: 1;
 }
-
+.js--m-nav{
+    opacity: 0; 
+}
 .js--m-nav.animated{
     opacity: 1;
     -webkit-animation-duration: 0.5s;

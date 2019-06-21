@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/Images/favicon/site.webmanifest">
+<link rel="shortcut icon" href="/Images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/Images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,41 +28,41 @@
       
     <div class="heading d-flex justify-content-between">
         <div class="logo">
-          <a href="https://hktransport919.github.io">
+          <a href="./">
               <img src="../Images/HK_Web.png" alt="Logo">
           </a>
         </div>
         <div class="call d-flex flex-row align-items-center">
           <div class=""><img src="../Images/Call_Logo.png" alt="Call"> </div>
           <div class=""><a style="color: #3b3b3b;" href="tel:7448115919">
-              <span>7448115919</span>
+              <span>+917448115919</span>
             </a></div>
             
-            <!-- <img src=".\Images\Call Blue Logo.png" alt="Call"> -->
+     
            
         </div> 
       </div>
             <nav class="sticky-top">
                 <div class="d-flex flex-column">
-                    <div class="mobile-nav d-flex justify-content-between">
-                        <img src="../Images/HK_Mob.png" alt="">
-                        <div class="align-self-center">
-                            <i class="fas fa-phone-alt"></i> 
-                          <span class="ml-1 call"><a style="color: #3b3b3b;" href="tel:7448115919">
-                              <span>7448 115919</span>
-                            </a></span>
-                        </div>
-                        <a class="nav-icon js--nav pointer pr-2 align-self-center"><i class="fas fa-bars"></i></a>
-                        
-                      </div>
+                <div class="mobile-nav justify-content-between">
+                  <img src="../Images/HK_Mob.png" alt="">
+                  <div class="align-self-center m-nav-call">
+                      <i class="fas fa-phone-alt"></i> 
+                    <span class="ml-1 call"><a style="color: #3b3b3b;" href="tel:7448115919">
+                        <span>7448115919</span>
+                      </a></span>
+                  </div>
+                  <a class="nav-icon js--nav pointer pr-2 align-self-center"><i class="fas fa-bars"></i></a>
+                  
+                </div>
                   <div class="web-nav">
                     <ul class="main-nav js--main-nav">
-                        <li><a class="" href="../">Home</a></li>
-                        <li><a class="" href="../">Services</a></li>
-                        <li><a class="" href="../">Gallery</a></li>
-                        <li><a class="" href="./">About Us</a></li>
-                        <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
-                      </ul>
+                      <li><a class="" href="../">Home</a></li>
+                      <li><a class="" href="../">Gallery</a></li>
+                      <li><a class="" href="./">About Us</a></li>
+                      <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
+                      <li><a class="js--scroll-to-cont" href="#">Get Quotation</a></li>
+                    </ul>
                     </div>
                   <!-- <div class="nav-logo">
                       
@@ -115,19 +124,36 @@
                         
                         <div class="mt-4 d-flex">
                             <i class="fas fa-envelope "></i>
-                            <span class="ml-3 col flex-grow-1" id="cont-email">support@hktransport.in</span>
+                            <span class="ml-3 col flex-grow-1" id="cont-email">info@hktransport.in</span>
                         </div>
                         <div class="mt-5 px-5 py-3 js--contact" style="border:2px solid black; font-weight: bold;">
                             We Provide Services From Mumbai, Pune & Ratnagiri To All Over India
                         </div>
                       </div>
                  
-                      <div class="col-md-7 ">
+                      <div class="col-md-7" id="form">
                     <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                         <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
                         <form id="contact-form gform" method="POST" action="../php/mailer.php" class="needs-validation" novalidate>
                           <div class="row">
                             <div class="col-md-6 mb-3">
+                                    <?php
+                              if($_GET['success']== 1){
+                                  echo "<div>
+                                                <h2>
+                                                    <em>Thanks</em> for contacting us!
+                                                    We will get back to you soon!
+                                                </h2>
+                                            </div>";
+                              }
+                              if($_GET['success']== -1){
+                                  echo "<div>
+                                                <h2>
+                                                    <em>Ooops!</em> Something went wrong!
+                                                </h2>
+                                            </div>";
+                              }
+                              ?>
                               <input type="name" class="form-control" id="name" name="name" placeholder="Name" value="" required>
                               <div class="invalid-feedback">
                                 Valid name is required.
@@ -148,7 +174,7 @@
                             </div>
                           </div>
                           <div class="mb-3">
-                              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message" required></textarea>
+                              <textarea class="form-control" id="message" rows="5" name="message" placeholder="Provide Load Details Here" required></textarea>
                           </div>
                      
                            <hr class="mb-4">
@@ -168,12 +194,12 @@
 
                   <div class="sticky-top sidenav js--m-nav">
                       <div class="row"> 
-                         <ul class="main-nav m-nav  js--main-nav">
+                         <ul class="main-nav m-nav js--main-nav flex-grow-1">
                             <li><a class="" href="../">Home</a></li>
-                            <li><a class="" href="../">Services</a></li>
                             <li><a class="" href="../">Gallery</a></li>
                             <li><a class="" href="./">About Us</a></li>
                             <li><a class="js--scroll-to-cont" href="#">Contact Us</a></li>
+                            <li><a class="js--scroll-to-mcont" href="#">Get Quotation</a></li>
                           </ul>
                         </div> 
                         <div class="m-cont">
@@ -188,7 +214,7 @@
                           
                           <div class="mt-2 d-flex">
                               <i class="fas fa-envelope ml-3"></i>
-                              <p class="col flex-grow-1" >support@hktransport.in</p>
+                              <p class="col flex-grow-1" >info@hktransport.in</p>
                           </div>
                           <div class="mt-2 d-flex ">
                               <i class="fas fa-map-marker-alt ml-3"></i>
@@ -203,7 +229,6 @@
 
 
 <script src="../JS/jquery-3.4.1.min.js"></script> 
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="../JS/bootstrap.min.js"></script>
 <script src="../JS/jquery.waypoints.min.js"></script>
