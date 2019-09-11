@@ -282,7 +282,7 @@ nav .div{
     Contact
 ***********************/
 .contact{
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-color: whitesmoke;
 }
 .fas{
@@ -305,6 +305,12 @@ nav .div{
    
         background-color: rgba(209, 46,46, 0.8);
     
+}
+.cc{
+    padding: 2%;
+}
+.cc div i{
+    margin-right: 5px;
 }
 /*********************
     About Us Page

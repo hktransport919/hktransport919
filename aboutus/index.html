@@ -134,26 +134,9 @@
                       <div class="col-md-7" id="form">
                     <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                         <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
-                        <form id="contact-form gform" method="POST" action="../php/mailer.php" class="needs-validation" novalidate>
+                        <form id="contact-form gform" method="POST" class="needs-validation" novalidate>
                           <div class="row">
                             <div class="col-md-6 mb-3">
-                                    <?php
-                              if($_GET['success']== 1){
-                                  echo "<div>
-                                                <h2>
-                                                    <em>Thanks</em> for contacting us!
-                                                    We will get back to you soon!
-                                                </h2>
-                                            </div>";
-                              }
-                              if($_GET['success']== -1){
-                                  echo "<div>
-                                                <h2>
-                                                    <em>Ooops!</em> Something went wrong!
-                                                </h2>
-                                            </div>";
-                              }
-                              ?>
                               <input type="name" class="form-control" id="name" name="name" placeholder="Name" value="" required>
                               <div class="invalid-feedback">
                                 Valid name is required.
@@ -190,7 +173,12 @@
                       </div>
                     </div>
                   </div>
+                  <hr style="margin-bottom: 0;">
+                  <div class="cc d-flex justify-content-end">
+                  <div><i class="far fa-copyright"></i></div>
+                  <div>HK Transport. All Rights Reserved</div>
                   </div>
+              </div>
 
                   <div class="sticky-top sidenav js--m-nav">
                       <div class="row"> 

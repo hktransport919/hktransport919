@@ -14,6 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="HK Transport is providing Transport Services in Pune, Mumbai & Ratnagiri region, known for the Quality & Cost Effective service provider of India. We are attached with the largest fleet community helping both fleet owners & load providers enjoy greater benefits. We believe in customer satisfaction & our main motto is to create the safest & low-cost services possible for out clients.">
     <title>HK Transport</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -48,7 +49,7 @@
              
                
             </div> 
-</div>
+          </div>
         <nav class="sticky-top">
           <div class="d-flex flex-column">
             <div class="mobile-nav justify-content-between">
@@ -150,8 +151,8 @@
             </div>
         </div>
        
-        <div class= "contact mt-5">
-          <div class="container">
+      <div class= "contact mt-5">
+        <div class="container">
           <div class=" d-flex row justify-content-between">
             <div class="col-md-4 mt-5 js--cont">
                 <h3 >Contact Information</h3>
@@ -182,21 +183,8 @@
               <div class="col-md-7 " id="form">
             <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                 <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
-                <form  method="POST" action="./php/mailer.php" class="needs-validation" novalidate>
+                <form  method="POST" action='./index.html' class="needs-validation" novalidate>
                   <div class="row">
-                  
-                     <?php
-                      if($_GET['success']== 1){
-                          echo "<div class=\"form-msg success\">
-                          <h5> Thanks for contacting us! We will get back to you soon! </h5>
-                          </div>";
-                      }
-                      if($_GET['success']== -1){
-                          echo "<div class=\"form-msg success\">
-                          <h5> Something went wrong! </h5>
-                          </div>";
-                      }
-                      ?>
                     
                     <div class="col-md-6 mb-3">
                       <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="" required>
@@ -235,7 +223,13 @@
               </div>
             </div>
           </div>
-          </div>
+          <hr style="margin-bottom: 0;">
+        <div class="cc d-flex justify-content-end">
+          <div><i class="far fa-copyright"></i></div>
+          <div> HK Transport. All Rights Reserved</div>
+        </div>
+     </div>
+       
 
           <div class="sticky-top sidenav js--m-nav">
             <div class="row"> 
@@ -269,7 +263,9 @@
     
                 </div>
               </div>
+              
           </div>
+        
 <script src="./JS/jquery-3.4.1.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
