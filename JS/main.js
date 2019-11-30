@@ -169,7 +169,7 @@ if (phone.value == "")
 
 if (msg.value == "")                        
 { 
-    msg.focus(); 
+      msg.focus(); 
     return false; 
 } 
 
