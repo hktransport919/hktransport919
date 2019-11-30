@@ -182,7 +182,7 @@
               <div class="col-md-7 " id="form">
             <div class="pt-3 col-md-11 order-md-1 mr-2 mt-5 border shadow">
                 <h4 class="mb-3 text-center" id="quot">Get Your Quotation Here</h4>
-                <form  method="POST" action='./index.html' class="needs-validation" novalidate>
+                <form name="submit-to-google-sheet" id="test-form" class="needs-validation" novalidate>
                   <div class="row">
                     
                     <div class="col-md-6 mb-3">
@@ -210,7 +210,7 @@
                   </div>
              
                    <hr class="mb-4">
-                  <button class="btn btn-primary btn-lg btn-block mb-4 form-control submit" type="button">Send Message</button>
+                  <button class="btn btn-primary btn-lg btn-block mb-4 form-control submit" id="submit-form" type="submit">Send Message</button>
                 </form>
                 <div style="display:none;" id="thankyou_message">
                   <h2>
@@ -269,5 +269,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="JS/jquery.waypoints.min.js"></script>
+<script src="JS/jquery.serialize-object.min.js"></script>
 <script src="JS/main.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzMpTlndU_6Iv6uTodje6Mbw5Sv76KDnEfINcTgDSZXh6AkCdk/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  console.log("Listening to script");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    console.log("Listening event submit");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        console.log('Success!', response);
+        document.getElementById('thankyou_message').style.display='block';
+      }
+      )
+      .catch(error => console.error('Error!', error.message))
+  });
+</script>
 </html>
