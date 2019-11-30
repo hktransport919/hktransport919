@@ -212,8 +212,8 @@
                    <hr class="mb-4">
                   <button class="btn btn-primary btn-lg btn-block mb-4 form-control submit" id="submit-form" type="submit">Send Message</button>
                 </form>
-                <div style="display:none;" id="thankyou_message">
-                  <h2>
+                <div style="display:none;" class="form-msg success" id="thankyou_message">
+                  <h2 style="font-size:1em;text-align:center">
                       <em>Thanks</em> for contacting us!
                       We will get back to you soon!
                   </h2>
@@ -272,20 +272,39 @@
 <script src="JS/jquery.serialize-object.min.js"></script>
 <script src="JS/main.js"></script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzMpTlndU_6Iv6uTodje6Mbw5Sv76KDnEfINcTgDSZXh6AkCdk/exec';
-  const form = document.forms['submit-to-google-sheet'];
-  console.log("Listening to script");
+ 
+  // const scriptURL = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec';
+  // const form = document.forms['submit-to-google-sheet'];
+  // console.log("Listening to script");
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    console.log("Listening event submit");
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        console.log('Success!', response);
-        document.getElementById('thankyou_message').style.display='block';
-      }
-      )
-      .catch(error => console.error('Error!', error.message))
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault()
+  //   console.log("Listening event submit");
+  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  //     .then(response => {
+  //       console.log('Success!', response);
+  //       document.getElementById('thankyou_message').style.display='block';
+  //     }
+  //     )
+  //     .catch(error => console.error('Error!', error.message))
+  // });
+
+  var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject(),
+  success: function(){
+    // do something
+    console.log('Success!');
+    document.getElementById('thankyou_message').style.display='block';
+  }
   });
+})
 </script>
 </html>
