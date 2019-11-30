@@ -289,22 +289,29 @@
   //     .catch(error => console.error('Error!', error.message))
   // });
 
+
   var $form = $('form#test-form'),
     url = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec'
 
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject(),
-  success: function(){
-    // do something
-    console.log('Success!');
-    document.getElementById('thankyou_message').style.display='block';
-  }
-  });
-})
+  $('#submit-form').on('click', function(e) {
+    if(form_validation()==true){
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject(),
+    success: function(){
+      // do something
+      console.log('Success!');
+      document.getElementById('thankyou_message').style.display='block';
+    }
+    });
+    }else{
+      console.log("Form Error");
+    }
+  })
+
+
 </script>
 </html>

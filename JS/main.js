@@ -130,14 +130,51 @@ $(document).ready(function(){
               if (form.checkValidity() === false) {
                 event.preventDefault();
                 event.stopPropagation();
+                
               }
               form.classList.add('was-validated');
+             
             }, false);
           });
         }, false);
       })();
    
+      //Form Validation
+     
 });
+function form_validation()                                    
+{ 
+var name = document.forms["submit-to-google-sheet"]["name"];               
+var email = document.forms["submit-to-google-sheet"]["email"];    
+var phone = document.forms["submit-to-google-sheet"]["phone"];  
+var msg =  document.forms["submit-to-google-sheet"]["message"]; 
+
+if (name.value == "")                                  
+{ 
+    name.focus(); 
+    return false; 
+} 
+
+if (email.value == "")                                   
+{ 
+    email.focus(); 
+    return false; 
+} 
+
+if (phone.value == "")                           
+{ 
+    phone.focus(); 
+    return false; 
+} 
+
+if (msg.value == "")                        
+{ 
+    msg.focus(); 
+    return false; 
+} 
+
+return true; 
+}
  /**************** 
       Window Resize
      ******************/
