@@ -186,13 +186,13 @@
                   <div class="row">
                     
                     <div class="col-md-6 mb-3">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="" required>
+                      <input type="text" class="form-control" id="name" name="Name" placeholder="Name" value="" required>
                       <div class="invalid-feedback">
                         Valid name is required.
                       </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" value="" required>
+                        <input type="text" class="form-control" id="phone" name="Phone" placeholder="Phone Number" value="" required>
                         <div class="invalid-feedback">
                           Valid Number is required.
                         </div>
@@ -200,13 +200,13 @@
                     </div>
                  
                   <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email ID" required>
+                    <input type="email" class="form-control" id="email" name="Email" placeholder="Email ID" required>
                     <div class="invalid-feedback">
                       Please enter a valid email address for shipping updates.
                     </div>
                   </div>
                   <div class="mb-3">
-                      <textarea class="form-control" id="message" rows="5" name="message" placeholder="Provide Load Details Here" required></textarea>
+                      <textarea class="form-control" id="message" rows="5" name="Message" placeholder="Provide Load Details Here" required></textarea>
                   </div>
              
                    <hr class="mb-4">
@@ -271,47 +271,4 @@
 <script src="JS/jquery.waypoints.min.js"></script>
 <script src="JS/jquery.serialize-object.min.js"></script>
 <script src="JS/main.js"></script>
-<script>
- 
-  // const scriptURL = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec';
-  // const form = document.forms['submit-to-google-sheet'];
-  // console.log("Listening to script");
-
-  // form.addEventListener('submit', e => {
-  //   e.preventDefault()
-  //   console.log("Listening event submit");
-  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  //     .then(response => {
-  //       console.log('Success!', response);
-  //       document.getElementById('thankyou_message').style.display='block';
-  //     }
-  //     )
-  //     .catch(error => console.error('Error!', error.message))
-  // });
-
-
-  var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec'
-
-  $('#submit-form').on('click', function(e) {
-    if(form_validation()==true){
-    e.preventDefault();
-    var jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serializeObject(),
-    success: function(){
-      // do something
-      console.log('Success!');
-      document.getElementById('thankyou_message').style.display='block';
-    }
-    });
-    }else{
-      console.log("Form Error");
-    }
-  })
-
-
-</script>
 </html>

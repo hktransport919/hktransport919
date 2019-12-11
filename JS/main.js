@@ -217,3 +217,25 @@ return true;
       //Fire it when the page first loads:
       alterClass();
     });
+
+    // Send Form to Google sheets
+
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec'
+
+  $('#submit-form').on('click', function(e) {
+    if(form_validation()==true){
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject(),
+    success: function(){
+      document.getElementById('thankyou_message').style.display='block';
+    }
+    });
+    }else{
+      console.log("Form Error");
+    }
+  })
