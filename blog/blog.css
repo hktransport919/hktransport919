@@ -32,3 +32,12 @@ body{
     font-size: 100%;
     line-height: 150%;
 }
+.contact {
+    background-color: white;
+}
+
+@media only screen  and (max-width:480px){
+    .blog-body>h1,.blog-questions>h1{
+        font-size: 150%;
+    }
+}
