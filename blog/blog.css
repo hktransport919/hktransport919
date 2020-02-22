@@ -40,4 +40,10 @@ body{
     .blog-body>h1,.blog-questions>h1{
         font-size: 150%;
     }
+    .blog-body{
+        padding: 2% 5%;
+    }
+    .blog-body>h2{
+        margin:10% 0;
+    }
 }
