@@ -19,7 +19,7 @@ body{
 }
 .blog-body>h2,.blog-body>h3{
     margin-top:5%;
-    font-size: 150%;
+    font-size: 130%;
     line-height: 150%;
 }
 .blog-content>h2{
@@ -31,6 +31,9 @@ body{
     margin-top:2%;
     font-size: 100%;
     line-height: 150%;
+}
+.blog-questions>h2{
+    font-size: 135%;
 }
 .contact {
     background-color: white;
