@@ -38,6 +38,26 @@ body{
 .contact {
     background-color: white;
 }
+.blog-image{
+    width:20em;
+  height:20em;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(./images/TDImage1.jpg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 1em;
+  position: relative;
+  margin: 2em auto;
+}
+
+#bImage1{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./images/TDImage1.jpg);
+}
+#bImage2{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/TDImage2.jpg);
+}
+#bImage3{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/TDImage3.jpg);
+}
 
 @media only screen  and (max-width:480px){
     .blog-body>h1,.blog-questions>h1{
