@@ -5,7 +5,7 @@ body{
 .heading{
     background-color: white;
 }
-.blog-main{
+.blog-main,.blog-content{
     margin-top: 5%;
 }
 .blog-body{
@@ -13,6 +13,7 @@ body{
     padding: 2% 10%;
     background-color: white;
 }
+
 .blog-body>h1,.blog-questions>h1{
     font-size: 200%;
     font-weight: 700;
@@ -23,12 +24,11 @@ body{
     line-height: 150%;
 }
 .blog-content>h2{
-    margin-top:2%;
     font-size: 150%;
     line-height: 150%;
 }
 .blog-questions>h3,.blog-body>h3,.blog-content>h3{
-    margin-top:2%;
+    margin-top:4%;
     font-size: 100%;
     line-height: 150%;
 }
@@ -74,4 +74,6 @@ body{
     .blog-image{
         width:15em;
       height:15em;
+}
+
 }
