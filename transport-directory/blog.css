@@ -64,11 +64,14 @@ body{
         font-size: 150%;
     }
     .blog-body{
-        margin: 5% 5%;
+        margin: 5% 8%;
         padding: 2% 5%;
     }
     .blog-body>h2{
         margin:10% 0;
         
     }
+    .blog-image{
+        width:15em;
+      height:15em;
 }
