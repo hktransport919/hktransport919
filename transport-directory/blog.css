@@ -1,79 +1,90 @@
-body{
-    background-color: #F2F4F6;
+body {
+  background-color: #f2f4f6;
+}
+.heading {
+  background-color: white;
+}
+.blog-main,
+.blog-content {
+  margin-top: 5%;
+}
+.blog-body {
+  margin: 5% 10%;
+  padding: 2% 10%;
+  background-color: white;
+}
 
+.blog-body > h1,
+.blog-questions > h1 {
+  font-size: 200%;
+  font-weight: 700;
 }
-.heading{
-    background-color: white;
+.blog-body > h2,
+.blog-body > h3 {
+  margin-top: 5%;
+  font-size: 130%;
+  line-height: 150%;
 }
-.blog-main,.blog-content{
-    margin-top: 5%;
+.blog-content > h2 {
+  font-size: 150%;
+  line-height: 150%;
 }
-.blog-body{
-    margin: 5% 10%;
-    padding: 2% 10%;
-    background-color: white;
+.blog-questions > h3,
+.blog-body > h3,
+.blog-content > h3 {
+  margin-top: 4%;
+  font-size: 100%;
+  line-height: 150%;
 }
-
-.blog-body>h1,.blog-questions>h1{
-    font-size: 200%;
-    font-weight: 700;
-}
-.blog-body>h2,.blog-body>h3{
-    margin-top:5%;
-    font-size: 130%;
-    line-height: 150%;
-}
-.blog-content>h2{
-    font-size: 150%;
-    line-height: 150%;
-}
-.blog-questions>h3,.blog-body>h3,.blog-content>h3{
-    margin-top:4%;
-    font-size: 100%;
-    line-height: 150%;
-}
-.blog-questions>h2{
-    font-size: 135%;
+.blog-questions > h2 {
+  font-size: 135%;
 }
 .contact {
-    background-color: white;
+  background-color: white;
 }
-.blog-image{
-    width:20em;
-  height:20em;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(./images/TDImage1.jpg);
+.blog-image {
+  width: 20em;
+  height: 20em;
   background-position: center;
   background-size: contain;
   border-radius: 1em;
   position: relative;
   margin: 2em auto;
 }
-
-#bImage1{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./images/TDImage1.jpg);
-}
-#bImage2{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/TDImage2.jpg);
-}
-#bImage3{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./images/TDImage3.jpg);
+#mainImage {
+  width: 20em;
+  height: 28em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/mainImage.jpg);
 }
 
-@media only screen  and (max-width:480px){
-    .blog-body>h1,.blog-questions>h1{
-        font-size: 150%;
-    }
-    .blog-body{
-        margin: 5% 8%;
-        padding: 2% 5%;
-    }
-    .blog-body>h2{
-        margin:10% 0;
-        
-    }
-    .blog-image{
-        width:15em;
-      height:15em;
+#bImage1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/TDImage1.jpg);
+}
+#bImage2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/TDImage2.jpg);
+}
+#bImage3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(./images/TDImage3.jpg);
 }
 
+@media only screen and (max-width: 480px) {
+  .blog-body > h1,
+  .blog-questions > h1 {
+    font-size: 150%;
+  }
+  .blog-body {
+    margin: 5% 8%;
+    padding: 2% 5%;
+  }
+  .blog-body > h2 {
+    margin: 10% 0;
+  }
+  .blog-image {
+    width: 15em;
+    height: 15em;
+  }
 }
