@@ -87,4 +87,8 @@ body {
     width: 15em;
     height: 15em;
   }
+  #mainImage{
+    width:15em;
+    height: 21em;
+  }
 }
