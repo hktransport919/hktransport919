@@ -70,6 +70,10 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./images/TDImage3.jpg);
 }
+#orderImage{
+  height: 4em;
+  width: 15em;  
+}
 
 @media only screen and (max-width: 480px) {
   .blog-body > h1,
