@@ -54,7 +54,7 @@ body {
 #mainImage {
   width: 20em;
   height: 28em;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
     url(./images/mainImage.jpg);
 }
 
@@ -84,11 +84,11 @@ body {
     margin: 10% 0;
   }
   .blog-image {
-    width: 15em;
-    height: 15em;
+    width: 14em;
+    height: 14em;
   }
   #mainImage{
-    width:15em;
+    width:14em;
     height: 21em;
   }
 }
