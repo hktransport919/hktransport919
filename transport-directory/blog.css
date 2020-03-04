@@ -72,7 +72,8 @@ body {
 }
 #orderImage{
   height: 4em;
-  width: 15em;  
+  width: 15em; 
+  margin: 5% 0; 
 }
 
 @media only screen and (max-width: 480px) {
@@ -90,6 +91,9 @@ body {
   .blog-image {
     width: 14em;
     height: 14em;
+  }
+  .blog-prices{
+    text-align: center;
   }
   #mainImage{
     width:14em;
