@@ -352,9 +352,26 @@ nav .div{
     display: block;
     padding-top: 80px;
 }
+/* bottom icons call and whatsapp */
+.mobile-call{
+    position: fixed;
+    z-index: 1151;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 /*********************
     Animation
 ***********************/
+
+.js--call,.js--whatsapp{
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}   
+
+
 
 .js--box1,.js--box2,.js--contact,
 .js--para,.js--tag,.js--partners{
@@ -362,7 +379,7 @@ nav .div{
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
 }
-.js--box1.animated,.js--box2.animated,.js--contact.animated,
+.js--box1.animated,.js--box2.animated,.js--contact.animated,    
 .js--para.animated,.js--tag.animated,.js--partners.animated
 {
     opacity: 1;

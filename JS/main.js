@@ -1,4 +1,19 @@
+function animateCSS(element, animationName, callback) {
+  const node = document.querySelector(element)
+  node.classList.add('animated', animationName)
+
+  function handleAnimationEnd() {
+      node.classList.remove('animated', animationName)
+      node.removeEventListener('animationend', handleAnimationEnd)
+
+      if (typeof callback === 'function') callback()
+  }
+
+  node.addEventListener('animationend', handleAnimationEnd)
+}
+
 $(document).ready(function(){
+  
   
   // window.onload = function () {
   //   setTimeout(function(){
@@ -62,6 +77,32 @@ $(document).ready(function(){
       },{
         offset:'90%'
       });
+      $('.js--whatsapp').waypoint(function(direction) {
+        $('.js--whatsapp').addClass('animated zoomIn');
+      },{
+        offset:'100%'
+      });
+      // animating call button
+      animateCSS('.js--call','zoomIn',function(){
+       setInterval(() => {
+        animateCSS('.js--call','tada',function(){
+          setTimeout(() => {
+            
+          }, 2000);//seconds to keep animation live
+        })
+       }, 2000);//seconds to delay animation 
+      });
+
+      // const element =  document.querySelector('.js--call');
+      // element.addEventListener('animationend', function() { 
+      //   this.classList.remove('animated');
+      //   this.classList.remove('zoomIn');
+      //   this.classList.add('animated');
+      //   this.classList.add('infinite');
+      //   this.classList.add('tada');
+      //   this.classList.add('delay-2s');
+
+      // });
 
       /**************** 
       Sidebar Navigation for Mobile
@@ -184,11 +225,14 @@ return true;
         if (ww < 1023) {
           $('.js--cont').removeClass('col-md-4');
           $('.js--cont').addClass('col-md-5');  
+          
         }else if (ww >= 1023) {
           $('.js--cont').removeClass('col-md-5');
           $('.js--cont').addClass('col-md-4');
           $('.sidenav').removeClass('animated');
           $('body').css('overflow','');
+          $('.mobile-call').hide();
+
         };
         if (ww < 767) {
           $('.heading').removeClass('d-flex');
@@ -199,6 +243,7 @@ return true;
           $('.js--tag').removeClass('container');
           $('#block').removeClass('row');
           $('#block').addClass('flex-column');
+          $('.mobile-call').show();
         }else if (ww >= 767) {
           $('.heading').addClass('d-flex');
          
@@ -208,6 +253,8 @@ return true;
           $('#block').addClass('row');
           $('#block').removeClass('flex-column');
           $('.sidenav').removeClass('animated');
+          $('.mobile-call').hide();
+
         };
       };
 

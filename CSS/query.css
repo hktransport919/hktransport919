@@ -1,6 +1,9 @@
 
 /* big tablet to 1200px: (width smaller than row)*/
 @media only screen  and (max-width:1200px){
+    .mobile-call{
+        display: none;
+    }
     #blue{
         width: 300px;
         height: 70px;
@@ -50,6 +53,9 @@
 
 /* Small tablet to big tablets: 768px to 1023px */
 @media only screen  and (max-width:1023px){
+    .mobile-call{
+        display: none;
+    }
     .content{
         height: 500px;
     }
@@ -149,7 +155,9 @@
 
 }
 @media only screen  and (max-width:783px){
-
+    .mobile-call{
+        display: none;
+    }
     .heading{
         display: flex;
     }
@@ -159,7 +167,7 @@
 @media only screen  and (max-width:767px){
     
     .heading .logo,.heading .call img,
-    .heading .call div,.web-nav{
+    .heading .call div,.web-nav, .mobile-call{
         display: none;
     }
     .heading{
@@ -287,6 +295,7 @@
 
 /* Small phones from : 0 to 480px */
 @media only screen  and (max-width:480px){
+   
     
    nav{
        margin: 0;
