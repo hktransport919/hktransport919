@@ -1,49 +1,47 @@
 /*********************
     HTML
 ***********************/
- 
-body{
-    overflow-x: hidden;
-} 
-body{
-    font-family: "Montserrat",sans-serif;
-    
+
+body {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*********************
     Heading
 ***********************/
 
-.heading{
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+.heading {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
-.logo{
-     padding-left: 5%;
+.logo {
+  padding-left: 5%;
 }
-.logo img{
-    /* height: 45px;
+.logo img {
+  /* height: 45px;
     width: 400px; */
-    height: 55px;
-    width: 210px;
-    margin-top: 2%;
+  height: 55px;
+  width: 210px;
+  margin-top: 2%;
 }
-.call{
-    padding-right: 7%;
-    
+.call {
+  padding-right: 7%;
 }
-.call img{
-    height: 40px;
-    width: 68px;
+.call img {
+  height: 40px;
+  width: 68px;
 }
-.call a{
-    font-size: 16px;
-    text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
-    
+.call a {
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.m-head,.m-head a{
-    display: none;
+.m-head,
+.m-head a {
+  display: none;
 }
 /*********************
     Navigation
@@ -51,66 +49,63 @@ body{
 
 /* Main Navigation*/
 
-nav img{
-    height: 0px;
-    width: 0px;
-    visibility: hidden;
+nav img {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
 }
-.mobile-nav,.sidenav{
-    display: none;
+.mobile-nav,
+.sidenav {
+  display: none;
 }
-.main-nav{
-    float: left;
-    list-style: none;
-    margin-top: 12px;
-    
+.main-nav {
+  float: left;
+  list-style: none;
+  margin-top: 12px;
 }
-.main-nav li{
-    display: inline-block;
-    margin-left:40px;   
-    
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
 }
 .main-nav li a:link,
-.main-nav li a:visited{
-    padding: 8px 0;
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
 }
 .main-nav li a:hover,
-.main-nav li a:active{
-    border-bottom: 2px solid orange;
+.main-nav li a:active {
+  border-bottom: 2px solid orange;
 }
 
-nav{
-    padding: 0px 0;
-    background-color: aliceblue;
-    /* changes */
-    /* position: absolute;
+nav {
+  padding: 0px 0;
+  background-color: aliceblue;
+  /* changes */
+  /* position: absolute;
     top: 66px;
     right: 0;
     left: 0;
     z-index: 1030;
     /* background-color: rgba(223, 156, 156, 0.075); */
-    /* background: linear-gradient( rgba(255, 255, 255, 1)40%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.04) 90%, rgba(255, 254, 254,0.04) 90%); */ 
-    
+  /* background: linear-gradient( rgba(255, 255, 255, 1)40%, rgba(255, 255, 255, 0.6) 70%, rgba(255, 255, 255, 0.04) 90%, rgba(255, 254, 254,0.04) 90%); */
 }
-nav .div{
-    position: relative;
+nav .div {
+  position: relative;
 }
 /* changes for nav */
-.fixed-theme{
-    top: 0;
-    background-color: aliceblue;
-    position: fixed;
+.fixed-theme {
+  top: 0;
+  background-color: aliceblue;
+  position: fixed;
 }
 
-.nav-icon{
-    float: right;
-    margin-right: 10px;
-    cursor: pointer;
+.nav-icon {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
 }
-
 
 /* .navbar{
     margin-top: 10px;
@@ -129,276 +124,357 @@ nav .div{
 /*********************
     Cover Page
 ***********************/
-.cover{
-    background-position: 100% 82%;
-    background-size: cover;
+.cover {
+  background-position: 100% 82%;
+  background-size: cover;
 }
-.content{
-    height: 560px;
-    width:100%;
-    font-size:0;
-    line-height: 0;
-    
-    display: block;
+.content {
+  height: 560px;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
 }
-.content div{
-    display: block;
+.content div {
+  display: block;
 }
-.box1{
-    padding-left: 10%;
-    padding-top: 4%;
-    z-index: 0;
+.box1 {
+  padding-left: 10%;
+  padding-top: 4%;
+  z-index: 0;
 }
-.box2{
-    padding-left: 15%;
+.box2 {
+  padding-left: 15%;
 }
-#blue{
-    vertical-align: top; 
+#blue {
+  vertical-align: top;
 }
-#white{
-    vertical-align: top;
+#white {
+  vertical-align: top;
 }
 
 /*********************
     Mid-page
 ***********************/
-.para1{
-    background-color: floralwhite;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(91%, white), color-stop(85%, #e60202),color-stop(94%, #e60202), color-stop(94%, rgb(25, 0, 117)));
-    background: linear-gradient(180deg, white 91%, #e60202 85%,#e60202 94%, rgb(25, 0, 117) 94%);
+.para1 {
+  background-color: floralwhite;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(91%, white),
+    color-stop(85%, #e60202),
+    color-stop(94%, #e60202),
+    color-stop(94%, rgb(25, 0, 117))
+  );
+  background: linear-gradient(
+    180deg,
+    white 91%,
+    #e60202 85%,
+    #e60202 94%,
+    rgb(25, 0, 117) 94%
+  );
 }
-#para{
-    padding-top: 70px;
-    padding-left: 9%;
+#para {
+  padding-top: 70px;
+  padding-left: 9%;
 }
-#para h1{
-    font-size: 32px;
-    
+#para h1 {
+  font-size: 32px;
 }
-#para p{
-    padding-top: 15px;
-    font-size: 16px;
+#para p {
+  padding-top: 15px;
+  font-size: 16px;
 }
-.truck{
-    padding-top: 7%;
-   /* padding-right: 10%; */
+.truck {
+  padding-top: 7%;
+  /* padding-right: 10%; */
 }
-.truck img{
-    height: 320px;
-    width: 525px;
-    border-radius:20px 20px 0 0;
-    margin-left: 20%;
+.truck img {
+  height: 320px;
+  width: 525px;
+  border-radius: 20px 20px 0 0;
+  margin-left: 20%;
 }
 
 /*********************
     Icons
 ***********************/
-.adv{
-    text-align: center;
-    padding-top: 3%;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(94%, white), color-stop(90%, #e60202),color-stop(96%, #e60202), color-stop(94%, rgb(25, 0, 117)));
-    background: linear-gradient(180deg, white 94%, #e60202 90%,#e60202 96%, rgb(25, 0, 117) 94%);
+.adv {
+  text-align: center;
+  padding-top: 3%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(94%, white),
+    color-stop(90%, #e60202),
+    color-stop(96%, #e60202),
+    color-stop(94%, rgb(25, 0, 117))
+  );
+  background: linear-gradient(
+    180deg,
+    white 94%,
+    #e60202 90%,
+    #e60202 96%,
+    rgb(25, 0, 117) 94%
+  );
 }
-.tag h1{
-    padding-bottom: 5px;
-    font-weight: bold;
+.tag h1 {
+  padding-bottom: 5px;
+  font-weight: bold;
 }
-.tag p{
-    padding: 0 30px;
-    padding-top: 5px;
-    
+.tag p {
+  padding: 0 30px;
+  padding-top: 5px;
 }
-.tag hr{
-    width: 100px;
-    color: blue;
-    border-top: 10px solid rgb(25, 0, 117);
-    border-radius:20px 20px 20px 20px;
+.tag hr {
+  width: 100px;
+  color: blue;
+  border-top: 10px solid rgb(25, 0, 117);
+  border-radius: 20px 20px 20px 20px;
 }
-.ico{
-    padding-top: 30px;
-    padding-bottom: 85px;
+.ico {
+  padding-top: 30px;
+  padding-bottom: 85px;
 }
-#ico1{
-    padding-left: 120px;
+#ico1 {
+  padding-left: 120px;
 }
-#ico3{
-    padding-right: 120px;
+#ico3 {
+  padding-right: 120px;
 }
-.ico h3{
-    padding-top: 16px;
-    font-size: 25px;
+.ico h3 {
+  padding-top: 16px;
+  font-size: 25px;
 }
-.ico p{
-    padding-top: 10px;
-    
+.ico p {
+  padding-top: 10px;
 }
 
 /*********************
     Clients
 ***********************/
-.client h1{
-    margin-top: 30px;
+.client h1 {
+  margin-top: 30px;
 }
-#rel{
-    height:160px;
-    width: 160px;
+#rel {
+  height: 160px;
+  width: 160px;
 }
-#baj{
-    height: 50px;
-    width: 190px;
-    /* margin-top: 50px; */
+#baj {
+  height: 50px;
+  width: 190px;
+  /* margin-top: 50px; */
 }
-#amu{
-    height: 85px;
-    width: 150px;
-    margin-top: 45px;
+#amu {
+  height: 85px;
+  width: 150px;
+  margin-top: 45px;
 }
-#god{
-    height: 65px;
-    width: 150px;
-    /* margin-left: 250px; */
+#god {
+  height: 65px;
+  width: 150px;
+  /* margin-left: 250px; */
 }
-#par{
-    height: 85px;
-    width: 165px;
-    /* margin-right: 250px;
+#par {
+  height: 85px;
+  width: 165px;
+  /* margin-right: 250px;
     margin-bottom: 50px; */
 }
-#nir{
-    height: 65px;
-    width: 165px;
+#nir {
+  height: 65px;
+  width: 165px;
 }
-#ess{
-    height: 85px;
-    width: 165px;
+#ess {
+  height: 85px;
+  width: 165px;
 }
-#lnt{
-    height: 100px;
-    width: 100px;
-    margin-right: 20px;
+#lnt {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
 }
 
 /*********************
     Contact
 ***********************/
-.contact{
-    padding: 60px 0 0;
-    background-color: whitesmoke;
+.contact {
+  padding: 60px 0 0;
+  background-color: whitesmoke;
 }
-.fas{
-    margin-top: 6px;
+.fas {
+  margin-top: 6px;
 }
 
-.form-msg{
-    width: 70%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    color: black;
-
+.form-msg {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  color: black;
 }
-.success{
-    background-color: rgba(38, 191,68, 0.8);
+.success {
+  background-color: rgba(38, 191, 68, 0.8);
 }
-.error{
-   
-        background-color: rgba(209, 46,46, 0.8);
-    
+.error {
+  background-color: rgba(209, 46, 46, 0.8);
 }
-.cc{
-    padding: 2%;
+.cc {
+  padding: 2%;
 }
-.cc div i{
-    margin-right: 5px;
+.cc div i {
+  margin-right: 5px;
 }
 /*********************
     About Us Page
 ***********************/
-.about-main{
-    text-align: center;
-    padding-top: 3%;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(255, 100, 100)), to(rgb(255, 255, 128)));
-    background: linear-gradient(to right, rgb(255, 100, 100), rgb(255, 255, 128));
+.about-main {
+  text-align: center;
+  padding-top: 3%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(255, 100, 100)),
+    to(rgb(255, 255, 128))
+  );
+  background: linear-gradient(to right, rgb(255, 100, 100), rgb(255, 255, 128));
 }
-.about-main p{
-    padding-top: 10px;
-    font-size: 19px;
+.about-main p {
+  padding-top: 10px;
+  font-size: 19px;
 }
-.vis{
-    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.7))),url(../Images/Vision.jpg);
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Vision.jpg);
+.vis {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../Images/Vision.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../Images/Vision.jpg);
 }
-.mis{
-    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.7))),url(../Images/Mission1.jpg);
-    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(../Images/Mission1.jpg);
+.mis {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.7))
+    ),
+    url(../Images/Mission1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../Images/Mission1.jpg);
 }
 
-.mis,.vis{
-   background-position: center center;
-   background-attachment: fixed;
-   color: white;
+.mis,
+.vis {
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
 }
-.mis hr,.vis hr{
-    width: 40%;
-    border-top: 2px solid rgb(255, 255, 255)
+.mis hr,
+.vis hr {
+  width: 40%;
+  border-top: 2px solid rgb(255, 255, 255);
 }
-.vis p,.mis p{
-    font-size: 21px;
+.vis p,
+.mis p {
+  font-size: 21px;
 }
-.vis div,.mis div{
-    height: 560px;
-    width:100%;
-    display: block;
-    padding-top: 80px;
+.vis div,
+.mis div {
+  height: 560px;
+  width: 100%;
+  display: block;
+  padding-top: 80px;
 }
 /* bottom icons call and whatsapp */
-.mobile-call{
-    position: fixed;
-    z-index: 1151;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: space-between;
+.mobile-call {
+  position: fixed;
+  z-index: 1151;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/*********************
+    Thank You Page
+***********************/
+
+.thank-main {
+  text-align: center;
+  padding-top: 3%;
+  background: -webkit-gradient(
+    180deg,
+    from(rgb(0, 196, 204)),
+    to(rgb(207, 244, 245))
+  );
+  background: linear-gradient(180deg, rgb(0, 196, 204), rgb(207, 244, 245));
+}
+.thank-title {
+  color: rgb(0, 69, 71);
+}
+.thank-main p {
+  color: rgb(0, 69, 71);
+  padding-top: 10px;
+  font-size: 19px;
+}
+
 /*********************
     Animation
 ***********************/
 
-.js--call,.js--whatsapp{
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-}   
+.js--call,
+.js--whatsapp {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
 
-
-
-.js--box1,.js--box2,.js--contact,
-.js--para,.js--tag,.js--partners{
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+.js--box1,
+.js--box2,
+.js--contact,
+.js--para,
+.js--tag,
+.js--partners {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
-.js--box1.animated,.js--box2.animated,.js--contact.animated,    
-.js--para.animated,.js--tag.animated,.js--partners.animated
-{
-    opacity: 1;
-
+.js--box1.animated,
+.js--box2.animated,
+.js--contact.animated,
+.js--para.animated,
+.js--tag.animated,
+.js--partners.animated {
+  opacity: 1;
 }
-#js--ico1,#js--ico2,#js--ico3{
-    opacity: 0;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
+#js--ico1,
+#js--ico2,
+#js--ico3 {
+  opacity: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
-#js--ico1.animated,#js--ico2.animated,#js--ico3.animated{
-    opacity: 1;
+#js--ico1.animated,
+#js--ico2.animated,
+#js--ico3.animated {
+  opacity: 1;
 }
-.js--m-nav{
-    opacity: 0; 
+.js--m-nav {
+  opacity: 0;
 }
-.js--m-nav.animated{
-    opacity: 1;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
-    display: block;
+.js--m-nav.animated {
+  opacity: 1;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  display: block;
 }
