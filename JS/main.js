@@ -299,6 +299,7 @@ var $form = $("form#test-form"),
 
 $("#submit-form").on("click", function (e) {
   if (form_validation() == true) {
+    window.location.href = "./thank-you";
     e.preventDefault();
     var jqxhr = $.ajax({
       url: url,
@@ -306,7 +307,6 @@ $("#submit-form").on("click", function (e) {
       dataType: "json",
       data: $form.serializeObject(),
       success: function () {
-        window.location.href = "./thank-you";
         // document.getElementById('thankyou_message').style.display='block';
       },
     });
