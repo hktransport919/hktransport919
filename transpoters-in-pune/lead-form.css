@@ -1,0 +1,44 @@
+body {
+  background-color: #f2f4f6;
+}
+.heading {
+  background-color: white;
+}
+.lead-form .form-header {
+  margin: 20rem;
+}
+.lead-form #heading-1 {
+  font-size: 1.5rem;
+}
+.lead-form #heading-2 {
+  font-size: 1rem;
+}
+
+.lead-form form input {
+  width: 91%;
+  outline: none;
+  border: 0;
+  padding: 9px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.lead-form form select {
+  width: 91%;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.lead-form form button {
+  width: 80%;
+  height: 3em;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
