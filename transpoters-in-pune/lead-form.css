@@ -16,6 +16,7 @@ body {
 
 .lead-form form input,
 .lead-form form select {
+  height: 10%;
   width: 91%;
   outline: none;
   border: 0;
