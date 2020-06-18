@@ -260,6 +260,7 @@ jQuery(document).ready(function ($) {
       $(".sidenav").removeClass("animated");
       $("body").css("overflow", "");
       $(".mobile-call").hide();
+      $(".mobile-whatsapp").hide();
     }
     if (ww < 767) {
       $(".heading").removeClass("d-flex");
@@ -271,6 +272,7 @@ jQuery(document).ready(function ($) {
       $("#block").removeClass("row");
       $("#block").addClass("flex-column");
       $(".mobile-call").show();
+      $(".mobile-whatsapp").show();
     } else if (ww >= 767) {
       $(".heading").addClass("d-flex");
 
@@ -281,6 +283,7 @@ jQuery(document).ready(function ($) {
       $("#block").removeClass("flex-column");
       $(".sidenav").removeClass("animated");
       $(".mobile-call").hide();
+      $(".mobile-whatsapp").hide();
     }
   };
 
