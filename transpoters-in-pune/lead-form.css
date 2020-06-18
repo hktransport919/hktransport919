@@ -68,3 +68,8 @@ input:focus {
   height: 3em;
   border-radius: 0.25em;
 }
+
+.lead-form form .vehicleType {
+  display: none;
+  transition: 0s;
+}
