@@ -82,25 +82,11 @@ input:focus {
   transition: 0s;
 }
 
-.movingPhoto {
-  padding-bottom: 85px;
-  background: linear-gradient(
-    180deg,
-    white 75%,
-    #e60202 75%,
-    #e60202 83%,
-    rgb(25, 0, 117) 70%
-  );
+.two-lines #line1 {
+  border: 0.6rem solid #e60202;
 }
-.client {
-  padding-bottom: 80px;
-  background: linear-gradient(
-    180deg,
-    #f2f4f6 85%,
-    #e60202 85%,
-    #e60202 90%,
-    rgb(25, 0, 117) 90%
-  );
+.two-lines #line2 {
+  border: 1rem solid rgb(25, 0, 117);
 }
 
 .movingPhoto img {
@@ -129,8 +115,8 @@ input:focus {
   display: inline-block;
 }
 .vehicle-img {
-  height: 10rem;
-  width: 10rem;
+  height: 13rem;
+  width: 13rem;
   background-size: 100%;
   margin: 10px;
 }
