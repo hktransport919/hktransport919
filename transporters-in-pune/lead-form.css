@@ -84,9 +84,11 @@ input:focus {
 
 .two-lines #line1 {
   border: 0.6rem solid #e60202;
+  background-color: #e60202;
 }
 .two-lines #line2 {
   border: 1rem solid rgb(25, 0, 117);
+  background-color: rgb(25, 0, 117);
 }
 
 .movingPhoto img {
