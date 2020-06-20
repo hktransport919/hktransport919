@@ -94,6 +94,18 @@ input:focus {
   width: 100%;
 }
 
+/* Brand Icons Padding */
+#rel {
+  margin-top: 0px;
+}
+#baj {
+  margin-top: 20px;
+}
+#amu {
+  margin-top: 15px;
+}
+
+/* Scroll Vehicles */
 .scrollVehicleTypes {
   margin: 2rem 0;
 }
@@ -109,6 +121,7 @@ input:focus {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  margin-top: 2rem;
 }
 
 .vehicle-card {
