@@ -124,14 +124,16 @@ input:focus {
   font-weight: bold;
 }
 
-.scrolling-wrapper {
+.scrolling-wrapper,
+.scroll-section {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   margin-top: 2rem;
 }
 
-.vehicle-card {
+.vehicle-card,
+.client-section {
   display: inline-block;
 }
 .vehicle-img {
@@ -141,7 +143,8 @@ input:focus {
   margin: 10px;
 }
 
-.scrolling-wrapper {
+.scrolling-wrapper,
+.scroll-section {
   -webkit-overflow-scrolling: touch;
 }
 
@@ -188,4 +191,23 @@ input:focus {
 .qna h2 {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.scroll-section .client-section {
+  white-space: normal;
+  margin: 10px;
+  background-color: white;
+  width: 80%;
+}
+.scroll-section .client-section .client-img {
+  height: 30%;
+  width: 30%;
+}
+.scroll-section .client-section .row {
+  margin: 5%;
+  overflow-wrap: break-word;
+}
+.client-star h3 {
+  font-size: 1rem;
+  margin: 10% 0 0 0;
 }
