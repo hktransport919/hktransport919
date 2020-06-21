@@ -69,6 +69,12 @@ input:focus {
   border-radius: 0.25em;
 }
 
+.getPrice {
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-iteration-count: infinite;
+}
+
 .lead-form form .callUs {
   width: 80%;
   height: 3em;
@@ -173,4 +179,13 @@ input:focus {
 .ico .col h3 {
   margin-top: 10%;
   padding-top: 0;
+}
+
+.qna {
+  margin: 10%;
+}
+
+.qna h2 {
+  font-size: 1rem;
+  font-weight: bold;
 }
