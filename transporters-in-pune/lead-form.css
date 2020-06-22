@@ -200,8 +200,9 @@ input:focus {
   width: 80%;
 }
 .scroll-section .client-section .client-img {
+  margin-top: 10%;
   height: 30%;
-  width: 30%;
+  width: 25%;
 }
 .scroll-section .client-section .row {
   margin: 5%;
