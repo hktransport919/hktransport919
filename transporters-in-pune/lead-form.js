@@ -8,44 +8,54 @@ $(document).ready(function () {
     }
   });
 
-  $("#place").autocomplete({
-    source: placeAC,
-    minLength: 2,
-    select: function (event, ui) {
-      console.log(
-        "Selected: " + ui.item.value + " with LocationId " + ui.item.id
-      );
-    },
+  $("#loadingPlace").keyup(async function () {
+    var value = this.value;
+    if (value.length > 0) {
+      var availableCities = await places(value);
+      $(this).autocomplete({
+        source: availableCities,
+      });
+    }
   });
 
-  function placeAC(query, callback) {
-    $.getJSON(
-      "https://places.cit.api.here.com/places/v1/autosuggest?at=" +
-        coordinates +
-        "&q=" +
-        query.term +
-        "&app_id=" +
-        APP_ID_HERE +
-        "&app_code=" +
-        APP_CODE_HERE,
-      function (data) {
-        var places = data.results.filter((place) => place.vicinity);
+  $("#unloadingPlace").keyup(async function () {
+    var value = this.value;
+    if (value.length > 0) {
+      var availableCities = await places(value);
+      $(this).autocomplete({
+        source: availableCities,
+      });
+    }
+  });
 
-        places = places.map((place) => {
-          return {
-            title: place.title,
-            value:
-              place.title +
-              ", " +
-              place.vicinity.replace(/<br\/>/g, ", ") +
-              " (" +
-              place.category +
-              ")",
-            id: place.id,
-          };
+  async function places(search) {
+    var availableCities = [];
+
+    var platform = new H.service.Platform({
+      apikey: config.HERE_API,
+    });
+
+    var service = await platform.getSearchService();
+
+    // Call the "autosuggest" method with the search parameters,
+    // the callback and an error callback function (called if a
+    // communication error occurs):
+    await service.autosuggest(
+      {
+        // Search query
+        q: search,
+        // Center of the search context
+        at: "19.0969,72.8669",
+      },
+      (result) => {
+        let results = result.items.slice(0, 3);
+
+        results.map(function (val) {
+          availableCities.push(val.title);
         });
-        return callback(places);
-      }
+      },
+      alert
     );
+    return availableCities;
   }
 });

@@ -44,6 +44,14 @@
     Certified Pune Transport. Get Instant Price Now."
     />
     <meta
+      name="keyword"
+      content="Transporters in Pune, Transport Services in Pune, Transport Pune, Pune Transport Services,"
+    />
+    <link
+      rel="amphtml"
+      href="https://www.trukky.com/pune-transport-services/amp"
+    />
+    <meta
       property="og:title"
       content="No.1 Transporter In Pune | Get Instant Quotation | पुणे ट्रांसपोर्ट कंपनी"
     />
@@ -54,6 +62,10 @@
     />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/query.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <!-- animation -->
     <link rel="stylesheet" href="../CSS/animate.css" />
     <!-- contact icon -->
@@ -75,6 +87,11 @@
       gtag("config", "UA-167092815-1");
       gtag("config", "AW-659554846");
     </script>
+
+    <script
+      type="module"
+      src="https://js.api.here.com/v3/3.1/mapsjs.bundle.js"
+    ></script>
   </head>
   <body>
     <div class="heading d-flex justify-content-between">
@@ -132,14 +149,19 @@
       <span class="formSection">
         <form action="" class="text-center">
           <div class="inputWithIcon">
-            <input type="text" name="" id="place" placeholder="Loading Point" />
+            <input
+              type="text"
+              name=""
+              id="loadingPlace"
+              placeholder="Loading Point"
+            />
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="inputWithIcon">
             <input
               type="text"
               name=""
-              id="place"
+              id="unloadingPlace"
               placeholder="Unloading Point"
             />
             <i class="fas fa-map-marker-alt"></i>
@@ -518,6 +540,7 @@
             <div class="row">
               <img
                 class="client-img"
+                id="akash-img"
                 src="./images/hk-transport-pune-min.png"
                 alt=""
                 srcset=""
@@ -660,6 +683,8 @@
     <script src="../JS/jquery.waypoints.min.js"></script>
     <script src="../JS/jquery.serialize-object.min.js"></script>
     <script src="../JS/main.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../config.js"></script>
     <script src="lead-form.js"></script>
   </body>
 </html>

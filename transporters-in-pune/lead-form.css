@@ -204,6 +204,9 @@ input:focus {
   height: 30%;
   width: 25%;
 }
+/* #akash-img {
+  width: 20%;
+} */
 .scroll-section .client-section .row {
   margin: 5%;
   overflow-wrap: break-word;
