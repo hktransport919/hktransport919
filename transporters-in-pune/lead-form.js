@@ -7,12 +7,30 @@ $(document).ready(function () {
       $("select.vehicleType").hide();
     }
   });
-
-  $("#loadingPlace").on("input", function () {
-    var value = this.value;
-    console.log(value);
+  $("#desktop-loadingPlace").on("input", async function () {
+    var value = $(this).val();
     if (value.length > 0) {
-      var availableCities = places(value);
+      var availableCities = await places(value);
+      $(this).autocomplete({
+        source: availableCities,
+      });
+    }
+  });
+
+  $("#desktop-unloadingPlace").on("input", async function () {
+    var value = this.value;
+    if (value.length > 0) {
+      var availableCities = await places(value);
+      $(this).autocomplete({
+        source: availableCities,
+      });
+    }
+  });
+
+  $("#loadingPlace").on("input", async function () {
+    var value = $(this).val();
+    if (value.length > 0) {
+      var availableCities = await places(value);
       $(this).autocomplete({
         source: availableCities,
       });
