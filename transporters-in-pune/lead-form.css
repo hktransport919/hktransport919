@@ -4,6 +4,19 @@ body {
 .heading {
   background-color: white;
 }
+/* Desktop Section Code */
+.desktop-form form {
+  width: 30%;
+  margin: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 1rem 0;
+}
+
+.mobile-section {
+  display: none;
+}
 .lead-form .form-header {
   margin: 20rem;
 }
@@ -97,121 +110,68 @@ input:focus {
   background-color: rgb(25, 0, 117);
 }
 
-.movingPhoto img {
+#ico1 img,
+#ico2 img,
+#ico3 img {
+  width: 50%;
+}
+.desktop-client {
+  margin: 5% auto;
+}
+
+.desktop-vehicles-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   width: 100%;
 }
 
-/* Brand Icons Padding */
-#rel {
-  margin-top: 0px;
-}
-#baj {
-  margin-top: 20px;
-}
-#amu {
-  margin-top: 15px;
-}
-
-/* Scroll Vehicles */
-.scrollVehicleTypes {
-  margin: 2rem 0;
-}
-
-.scrollVehicleTypes h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-}
-
-.scrolling-wrapper,
-.scroll-section {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  margin-top: 2rem;
-}
-
-.vehicle-card,
-.client-section {
-  display: inline-block;
-}
 .vehicle-img {
-  height: 13rem;
-  width: 13rem;
+  height: 17rem;
+  width: 17rem;
   background-size: 100%;
   margin: 10px;
 }
 
-.scrolling-wrapper,
-.scroll-section {
-  -webkit-overflow-scrolling: touch;
+.desktop-faq-section {
+  margin: auto 20%;
 }
 
-.show-flex {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: auto;
-}
-.flex-item {
-  flex: 0 0 auto;
-  height: 90px;
-  width: 90px;
-  background-position: 100% 82%;
-  background-size: cover;
-}
-
-.specs-section {
-  margin: 10% 0;
-  text-align: center;
-}
-
-#js--ico1,
-#js--ico2,
-#js--ico3 {
-  height: 45%;
-  width: 45%;
-}
-.ico {
-  padding: 0 15px;
-}
-.ico .col h3 {
-  font-weight: 700;
-}
-.ico .col,
-.ico .col h3 {
-  margin-top: 10%;
-  padding-top: 0;
-}
-
-.qna {
-  margin: 10%;
-}
-
-.qna h2 {
-  font-size: 1rem;
+.desktop-faq-section .qna h2 {
+  margin-top: 3%;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
-.scroll-section .client-section {
-  white-space: normal;
-  margin: 10px;
+.desktop-reviews-section .scroll-section {
+  display: flex;
+}
+
+.desktop-reviews-section .scroll-section .client-section {
   background-color: white;
-  width: 80%;
+  margin: 1.5%;
+  padding: 1%;
 }
-.scroll-section .client-section .client-img {
-  margin-top: 10%;
-  height: 30%;
-  width: 25%;
+
+.desktop-reviews-section .scroll-section .client-section .client-img {
+  height: 20%;
+  width: 30%;
 }
-/* #akash-img {
-  width: 20%;
-} */
-.scroll-section .client-section .row {
-  margin: 5%;
-  overflow-wrap: break-word;
+#lakshmi {
+  margin: 4% 0 0 5%;
 }
-.client-star h3 {
-  font-size: 1rem;
-  margin: 10% 0 0 0;
+#akash {
+  margin: 3% 0 0 5%;
+}
+#auro {
+  margin: 0 0 0 5%;
+}
+.desktop-reviews-section .client-star {
+  margin-left: 5%;
+}
+.desktop-reviews-section .scroll-section .client-section h3 {
+  font-size: 1.4rem;
+}
+.desktop-reviews-section .client-section p {
+  margin-top: 2%;
 }

@@ -8,17 +8,18 @@ $(document).ready(function () {
     }
   });
 
-  $("#loadingPlace").keyup(async function () {
+  $("#loadingPlace").on("input", function () {
     var value = this.value;
+    console.log(value);
     if (value.length > 0) {
-      var availableCities = await places(value);
+      var availableCities = places(value);
       $(this).autocomplete({
         source: availableCities,
       });
     }
   });
 
-  $("#unloadingPlace").keyup(async function () {
+  $("#unloadingPlace").on("input", async function () {
     var value = this.value;
     if (value.length > 0) {
       var availableCities = await places(value);

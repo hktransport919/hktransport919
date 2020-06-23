@@ -1,0 +1,143 @@
+/* big tablet to 1200px: (width smaller than row)*/
+@media only screen and (max-width: 1200px) {
+}
+
+/* Small tablet to big tablets: 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+}
+@media only screen and (max-width: 783px) {
+}
+
+/* Small phones to small tablets: 481px to 767px */
+@media only screen and (max-width: 767px) {
+}
+
+/* Small phones from : 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .mobile-section {
+    display: block;
+  }
+  .desktop-section {
+    display: none;
+  }
+
+  .movingPhoto img {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  /* Brand Icons Padding */
+  #rel {
+    margin-top: 0px;
+  }
+  #baj {
+    margin-top: 20px;
+  }
+  #amu {
+    margin-top: 15px;
+  }
+
+  /* Scroll Vehicles */
+  .scrollVehicleTypes {
+    margin: 2rem 0;
+  }
+
+  .scrollVehicleTypes h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .scrolling-wrapper,
+  .scroll-section {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 2rem;
+  }
+
+  .vehicle-card,
+  .client-section {
+    display: inline-block;
+  }
+  .vehicle-img {
+    height: 13rem;
+    width: 13rem;
+    background-size: 100%;
+    margin: 10px;
+  }
+
+  .scrolling-wrapper,
+  .scroll-section {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .show-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .flex-item {
+    flex: 0 0 auto;
+    height: 90px;
+    width: 90px;
+    background-position: 100% 82%;
+    background-size: cover;
+  }
+
+  .specs-section {
+    margin: 10% 0;
+    text-align: center;
+  }
+
+  #js--ico1,
+  #js--ico2,
+  #js--ico3 {
+    height: 45%;
+    width: 45%;
+  }
+  .ico {
+    padding: 0 15px;
+  }
+  .ico .col h3 {
+    font-weight: 700;
+  }
+  .ico .col,
+  .ico .col h3 {
+    margin-top: 10%;
+    padding-top: 0;
+  }
+
+  .qna {
+    margin: 10%;
+  }
+
+  .qna h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .scroll-section .client-section {
+    white-space: normal;
+    margin: 10px;
+    background-color: white;
+    width: 80%;
+  }
+  .scroll-section .client-section .client-img {
+    margin-top: 10%;
+    height: 30%;
+    width: 25%;
+  }
+  /* #akash-img {
+  width: 20%;
+} */
+  .scroll-section .client-section .row {
+    margin: 5%;
+    overflow-wrap: break-word;
+  }
+  .client-star h3 {
+    font-size: 1rem;
+    margin: 10% 0 0 0;
+  }
+}
