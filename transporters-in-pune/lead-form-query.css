@@ -21,6 +21,16 @@
     display: none;
   }
 
+  .mobile-section .formSection {
+    background-color: white;
+  }
+
+  .lead-form form input,
+  .lead-form form select {
+    border: none;
+    background-color: #f2f4f6;
+  }
+
   .movingPhoto img {
     width: 100%;
     margin: 5% 0;

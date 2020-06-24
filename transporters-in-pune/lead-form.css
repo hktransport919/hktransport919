@@ -60,8 +60,14 @@ input:focus {
   transition: 0.3s;
 }
 
-.inputWithIcon input:focus + i {
-  color: dodgerBlue;
+#desktop-loadingPlace:focus + i,
+.inputWithIcon #loadingPlace:focus + i {
+  color: green;
+}
+
+#desktop-unloadingPlace:focus + i,
+.inputWithIcon #unloadingPlace:focus + i {
+  color: red;
 }
 
 .inputWithIcon.inputIconBg i {
@@ -110,6 +116,10 @@ input:focus {
   background-color: rgb(25, 0, 117);
 }
 
+.desktop-section .choose-section .ico {
+  padding: 5% 0;
+}
+
 #ico1 img,
 #ico2 img,
 #ico3 img {
@@ -117,13 +127,6 @@ input:focus {
 }
 .desktop-client {
   margin: 5% auto;
-}
-
-.desktop-vehicles-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  width: 100%;
 }
 
 .vehicle-img {
@@ -164,7 +167,8 @@ input:focus {
   margin: 3% 0 0 5%;
 }
 #auro {
-  margin: 0 0 0 5%;
+  margin: 0 0 0 8%;
+  width: 26%;
 }
 .desktop-reviews-section .client-star {
   margin-left: 5%;
