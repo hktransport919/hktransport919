@@ -123,6 +123,11 @@ input:focus {
   border: 1rem solid rgb(25, 0, 117);
   background-color: rgb(25, 0, 117);
 }
+.tag h2 {
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
 
 .desktop-section .choose-section .ico {
   padding: 4% 0;
@@ -140,6 +145,11 @@ input:focus {
 }
 .desktop-client {
   margin: 5% auto;
+}
+.client h2 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .vehicle-img {

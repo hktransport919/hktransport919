@@ -35,6 +35,15 @@
     margin: 5% 0;
   }
 
+  .client h2,
+  .specs-section h2,
+  .reviews-section h2,
+  .last-section h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 10px 50px 0;
+  }
+
   #ico1 img,
   #ico2 img,
   #ico3 img {
@@ -57,7 +66,7 @@
     margin: 2rem 0;
   }
 
-  .scrollVehicleTypes h1 {
+  .scrollVehicleTypes h2 {
     font-size: 1.5rem;
     text-align: center;
     line-height: 30px;
