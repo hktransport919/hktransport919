@@ -35,6 +35,12 @@
     margin: 5% 0;
   }
 
+  #ico1 img,
+  #ico2 img,
+  #ico3 img {
+    width: 50%;
+  }
+
   /* Brand Icons Padding */
   #rel {
     margin-top: 0px;

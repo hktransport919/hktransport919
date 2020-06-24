@@ -17,6 +17,17 @@ body {
 .mobile-section {
   display: none;
 }
+
+.form-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.title-line {
+  width: 42%;
+  margin: 1% auto;
+  border-top: 1px solid black;
+}
 .lead-form .form-header {
   margin: 20rem;
 }
@@ -59,14 +70,11 @@ input:focus {
   color: #aaa;
   transition: 0.3s;
 }
-
-#desktop-loadingPlace:focus + i,
-.inputWithIcon #loadingPlace:focus + i {
+#loadingPlace + i {
   color: green;
 }
 
-#desktop-unloadingPlace:focus + i,
-.inputWithIcon #unloadingPlace:focus + i {
+#unloadingPlace + i {
   color: red;
 }
 
@@ -117,23 +125,28 @@ input:focus {
 }
 
 .desktop-section .choose-section .ico {
-  padding: 5% 0;
+  padding: 4% 0;
+}
+
+.desktop-section .choose-section .ico h3 {
+  padding-top: 10%;
+  font-weight: bold;
 }
 
 #ico1 img,
 #ico2 img,
 #ico3 img {
-  width: 50%;
+  width: 40%;
 }
 .desktop-client {
   margin: 5% auto;
 }
 
 .vehicle-img {
-  height: 17rem;
-  width: 17rem;
+  height: 19rem;
+  width: 19rem;
   background-size: 100%;
-  margin: 10px;
+  margin: 3rem 3rem 1rem 3rem;
 }
 
 .desktop-faq-section {
