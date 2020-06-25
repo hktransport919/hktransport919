@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("select.loadType").change(function () {
     var selectedLoadType = $(this).children("option:selected").val();
-    if (selectedLoadType === "ftl") {
+    if (selectedLoadType === "Full Truck Load") {
       $("select.vehicleType").show();
     } else {
       $("select.vehicleType").hide();

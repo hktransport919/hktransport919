@@ -245,6 +245,48 @@ function form_validation() {
 
   return true;
 }
+function leadForm_validation(formName) {
+  var lp = document.forms[formName]["LoadingPoint"];
+  var ulp = document.forms[formName]["UnloadingPoint"];
+  var lt = document.forms[formName]["LoadType"];
+  var vt = document.forms[formName]["VehicleType"];
+  var weight = document.forms[formName]["Weight"];
+  var material = document.forms[formName]["Material"];
+  var phone = document.forms[formName]["Phone"];
+
+  if (lp.value == "") {
+    lp.focus();
+    return false;
+  }
+
+  if (ulp.value == "") {
+    ulp.focus();
+    return false;
+  }
+
+  if (lt.value == "invalid") {
+    lt.focus();
+    return false;
+  } else if (lt.value == "Full Truck Load" && vt.value == "invalid") {
+    vt.focus();
+    return false;
+  }
+
+  if (weight.value == "") {
+    weight.focus();
+    return false;
+  }
+  if (material.value == "") {
+    material.focus();
+    return false;
+  }
+  if (phone.value == "") {
+    phone.focus();
+    return false;
+  }
+
+  return true;
+}
 /**************** 
       Window Resize
      ******************/
@@ -297,8 +339,12 @@ jQuery(document).ready(function ($) {
 // Send Form to Google sheets
 
 var $form = $("form#test-form"),
+  $leadform = $("form#leadForm"),
+  $mLeadForm = $("form#mobile-leadForm"),
   url =
-    "https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec";
+    "https://script.google.com/macros/s/AKfycbxo-_6_adFtAL2o2BFT4Rk68R_6nt9-Mvej-ONXCnzNBMtZ4UE/exec",
+  leadUrl =
+    "https://script.google.com/macros/s/AKfycby9VuJcff4pMtIHjP9x7xGPV-ICAmpELl7jgKg8_xWtTteK38w/exec";
 
 $("#submit-form").on("click", function (e) {
   if (form_validation() == true) {
@@ -309,6 +355,63 @@ $("#submit-form").on("click", function (e) {
       method: "GET",
       dataType: "json",
       data: $form.serializeObject(),
+      success: function () {
+        // document.getElementById('thankyou_message').style.display='block';
+      },
+    });
+  } else {
+    console.log("Form Error");
+  }
+});
+
+$.fn.serializeForm = function () {
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function () {
+    if (o[this.name]) {
+      if (!o[this.name].push) {
+        o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || "");
+    } else {
+      o[this.name] = this.value || "";
+    }
+  });
+  return o;
+};
+
+$("#leadFormSubmit").on("click", function (e) {
+  e.preventDefault();
+
+  if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
+    window.location.href = "../thank-you";
+    console.log($leadform.serializeForm());
+    var jqxhr = $.ajax({
+      url: leadUrl,
+      method: "POST",
+      dataType: "json",
+      data: $leadform.serializeForm(),
+      success: function () {
+        // document.getElementById('thankyou_message').style.display='block';
+      },
+      error: function (e) {
+        console.log(e);
+      },
+    });
+  } else {
+    console.log("Form Error");
+  }
+});
+$("#mobile-leadFormSubmit").on("click", function (e) {
+  e.preventDefault();
+
+  if (leadForm_validation("mobile-submit-leadForm-to-google-sheet") == true) {
+    window.location.href = "/thank-you";
+    var jqxhr = $.ajax({
+      url: leadUrl,
+      method: "POST",
+      dataType: "json",
+      data: $mLeadForm.serializeObject(),
       success: function () {
         // document.getElementById('thankyou_message').style.display='block';
       },
