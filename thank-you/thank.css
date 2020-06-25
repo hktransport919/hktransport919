@@ -180,6 +180,9 @@
     margin: 5%;
     overflow-wrap: break-word;
   }
+  .scroll-section .client-section h3 {
+    font-size: 1rem;
+  }
   .client-star h3 {
     font-size: 1rem;
     margin: 10% 0 0 0;

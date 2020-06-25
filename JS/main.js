@@ -385,7 +385,6 @@ $("#leadFormSubmit").on("click", function (e) {
 
   if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
     window.location.href = "../thank-you";
-    console.log($leadform.serializeForm());
     var jqxhr = $.ajax({
       url: leadUrl,
       method: "POST",
@@ -411,7 +410,7 @@ $("#mobile-leadFormSubmit").on("click", function (e) {
       url: leadUrl,
       method: "POST",
       dataType: "json",
-      data: $mLeadForm.serializeObject(),
+      data: $mLeadForm.serializeForm(),
       success: function () {
         // document.getElementById('thankyou_message').style.display='block';
       },
