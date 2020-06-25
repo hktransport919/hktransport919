@@ -124,7 +124,8 @@
   }
 
   .client h2,
-  .choose-section h2 {
+  .choose-section h2,
+  .reviews-section h2 {
     font-size: 1.5rem;
   }
   /* Scroll Vehicles For mobile */
