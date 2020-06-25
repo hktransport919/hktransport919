@@ -1,0 +1,196 @@
+/*********************
+    Thank You Page
+***********************/
+
+.thank-main {
+  text-align: center;
+  padding-top: 3%;
+  background: -webkit-gradient(to bottom, rgb(0, 196, 204), white);
+  background: linear-gradient(to bottom, rgb(0, 196, 204), white);
+}
+.thank-title {
+  color: rgb(0, 69, 71);
+}
+.thank-main p {
+  color: rgb(0, 69, 71);
+  padding-top: 10px;
+  font-size: 19px;
+}
+.two-lines #line1 {
+  border: 0.6rem solid #e60202;
+  background-color: #e60202;
+}
+.two-lines #line2 {
+  border: 1rem solid rgb(25, 0, 117);
+  background-color: rgb(25, 0, 117);
+}
+
+.faq-section {
+  margin: auto 20%;
+}
+.tag h2 {
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.qna {
+  margin-top: 3%;
+}
+.qna h2 {
+  margin-top: 2%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.client {
+  margin: 3% auto;
+}
+.client hr {
+  display: none;
+}
+
+.client h2 {
+  font-size: 2.5rem;
+}
+.scrolling-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.vehicle-img {
+  height: 19rem;
+  width: 19rem;
+  background-size: 100%;
+  margin: 0rem 3rem 0rem 3rem;
+}
+
+.reviews-section {
+  background-color: #f5f5f5;
+}
+
+.scroll-section {
+  display: flex;
+}
+.scroll-section .client-section {
+  background-color: white;
+  margin: 1.5%;
+  padding: 1%;
+  border: thin black;
+}
+
+.scroll-section .client-section .client-img {
+  height: 20%;
+  width: 30%;
+}
+#lakshmi {
+  margin: 4% 0 0 5%;
+}
+#akash {
+  margin: 3% 0 0 5%;
+}
+#auro {
+  margin: 0 0 0 8%;
+  width: 26%;
+}
+.client-star {
+  margin-left: 5%;
+}
+.scroll-section .client-section h3 {
+  font-size: 1.4rem;
+}
+.client-section p {
+  margin-top: 2%;
+}
+
+/* Small phones from : 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .faq-section {
+    margin: auto 0;
+  }
+  .qna {
+    margin: 10%;
+  }
+  .qna h2 {
+    font-size: 1rem;
+  }
+  .client {
+    margin: 10% auto;
+  }
+  .client hr {
+    display: block;
+    width: 60%;
+    border-top: 2px solid rgb(25, 0, 117);
+    margin-bottom: 0;
+  }
+
+  .client h2,
+  .choose-section h2 {
+    font-size: 1.5rem;
+  }
+  /* Scroll Vehicles For mobile */
+  .scrollVehicleTypes {
+    margin: 2rem 0;
+  }
+
+  .scrollVehicleTypes h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .scrolling-wrapper,
+  .scroll-section {
+    display: block;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .vehicle-card,
+  .client-section {
+    display: inline-block;
+  }
+
+  .vehicle-img {
+    height: 13rem;
+    width: 13rem;
+    background-size: 100%;
+    margin: 10px;
+  }
+
+  .scrolling-wrapper,
+  .scroll-section {
+    -webkit-overflow-scrolling: touch;
+  }
+  .scroll-section .client-section {
+    white-space: normal;
+    margin: 10px;
+    background-color: white;
+    width: 80%;
+  }
+  .scroll-section .client-section .client-img {
+    margin-top: 10%;
+    height: 30%;
+    width: 30%;
+  }
+  /* #akash-img {
+  width: 20%;
+} */
+  .scroll-section .client-section .row {
+    margin: 5%;
+    overflow-wrap: break-word;
+  }
+  .client-star h3 {
+    font-size: 1rem;
+    margin: 10% 0 0 0;
+  }
+  #lakshmi {
+    margin: 12% 0 0 0;
+  }
+  #akash {
+    margin: 12% 0 0 0;
+  }
+  #auro {
+    margin: 8% 0 0 0;
+  }
+}
