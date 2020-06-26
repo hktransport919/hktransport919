@@ -51,6 +51,22 @@
 .client h2 {
   font-size: 2.5rem;
 }
+
+.choose-section .ico {
+  padding: 4% 0;
+}
+
+.choose-section .ico h3 {
+  padding-top: 10%;
+  font-weight: bold;
+}
+
+#ico1 img,
+#ico2 img,
+#ico3 img {
+  width: 40%;
+}
+
 .scrolling-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -127,6 +143,16 @@
   .choose-section h2,
   .reviews-section h2 {
     font-size: 1.5rem;
+  }
+  #ico1 img,
+  #ico2 img,
+  #ico3 img {
+    width: 50%;
+  }
+  #ico1,
+  #ico2,
+  #ico3 {
+    margin: 5% 0;
   }
   /* Scroll Vehicles For mobile */
   .scrollVehicleTypes {
