@@ -387,7 +387,7 @@ $("#leadFormSubmit").on("click", function (e) {
     window.location.href = "/thank-you";
     var jqxhr = $.ajax({
       url: leadUrl,
-      method: "POST",
+      method: "GET",
       dataType: "json",
       data: $leadform.serializeForm(),
       success: function () {
@@ -408,7 +408,7 @@ $("#mobile-leadFormSubmit").on("click", function (e) {
     window.location.href = "/thank-you";
     var jqxhr = $.ajax({
       url: leadUrl,
-      method: "POST",
+      method: "GET",
       dataType: "json",
       data: $mLeadForm.serializeForm(),
       success: function () {
