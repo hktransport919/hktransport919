@@ -384,7 +384,7 @@ $("#leadFormSubmit").on("click", function (e) {
   e.preventDefault();
 
   if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
-    window.location.href = "/thank-you";
+    // window.location.href = "/thank-you";
     var jqxhr = $.ajax({
       url: leadUrl,
       method: "GET",
