@@ -351,6 +351,8 @@ $("#submit-form").on("click", function (e) {
     window.location.href = "./thank-you";
     e.preventDefault();
     var jqxhr = $.ajax({
+      cache: false,
+      headers: { "cache-control": "no-cache" },
       url: url,
       method: "GET",
       dataType: "json",
@@ -386,6 +388,8 @@ $("#leadFormSubmit").on("click", function (e) {
   if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
     window.location.href = "/thank-you";
     var jqxhr = $.ajax({
+      cache: false,
+      headers: { "cache-control": "no-cache" },
       url: leadUrl,
       method: "GET",
       dataType: "json",
@@ -407,6 +411,8 @@ $("#mobile-leadFormSubmit").on("click", function (e) {
   if (leadForm_validation("mobile-submit-leadForm-to-google-sheet") == true) {
     window.location.href = "/thank-you";
     var jqxhr = $.ajax({
+      cache: false,
+      headers: { "cache-control": "no-cache" },
       url: leadUrl,
       method: "GET",
       dataType: "json",
