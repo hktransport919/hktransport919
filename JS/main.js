@@ -346,19 +346,21 @@ var $form = $("form#test-form"),
   leadUrl =
     "https://script.google.com/macros/s/AKfycby9VuJcff4pMtIHjP9x7xGPV-ICAmpELl7jgKg8_xWtTteK38w/exec";
 
+$.ajaxSetup({ cache: false });
+
 $("#submit-form").on("click", function (e) {
+  // window.location.href = "./thank-you";
+
   if (form_validation() == true) {
-    window.location.href = "./thank-you";
     e.preventDefault();
     var jqxhr = $.ajax({
-      cache: false,
-      headers: { "cache-control": "no-cache" },
       url: url,
       method: "GET",
       dataType: "json",
       data: $form.serializeObject(),
       success: function () {
         // document.getElementById('thankyou_message').style.display='block';
+        window.location.href = "./thank-you";
       },
     });
   } else {
@@ -386,16 +388,16 @@ $("#leadFormSubmit").on("click", function (e) {
   e.preventDefault();
 
   if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
-    window.location.href = "/thank-you";
+    // window.location.href = "/thank-you";
     var jqxhr = $.ajax({
-      cache: false,
-      headers: { "cache-control": "no-cache" },
       url: leadUrl,
       method: "GET",
       dataType: "json",
       data: $leadform.serializeForm(),
       success: function () {
+        console.log($leadform.serializeForm());
         // document.getElementById('thankyou_message').style.display='block';
+        window.location.href = "./thank-you";
       },
       error: function (e) {
         console.log(e);
@@ -409,16 +411,15 @@ $("#mobile-leadFormSubmit").on("click", function (e) {
   e.preventDefault();
 
   if (leadForm_validation("mobile-submit-leadForm-to-google-sheet") == true) {
-    window.location.href = "/thank-you";
+    // window.location.href = "/thank-you";
     var jqxhr = $.ajax({
-      cache: false,
-      headers: { "cache-control": "no-cache" },
       url: leadUrl,
       method: "GET",
       dataType: "json",
       data: $mLeadForm.serializeForm(),
       success: function () {
         // document.getElementById('thankyou_message').style.display='block';
+        window.location.href = "./thank-you";
       },
     });
   } else {
