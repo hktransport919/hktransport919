@@ -346,25 +346,23 @@ var $form = $("form#test-form"),
   leadUrl =
     "https://script.google.com/macros/s/AKfycby9VuJcff4pMtIHjP9x7xGPV-ICAmpELl7jgKg8_xWtTteK38w/exec";
 
-$.ajaxSetup({ cache: false });
+// $.ajaxSetup({ cache: false });
 
-$("#submit-form").on("click", function (e) {
-  // window.location.href = "./thank-you";
-
+$("#submit-form").on("click", async function (e) {
   if (form_validation() == true) {
     e.preventDefault();
-    var jqxhr = $.ajax({
+    var jqxhr = await $.ajax({
       url: url,
       method: "GET",
       dataType: "json",
       data: $form.serializeObject(),
       success: function () {
-        // document.getElementById('thankyou_message').style.display='block';
         window.location.href = "./thank-you";
+
+        // document.getElementById('thankyou_message').style.display='block';
       },
     });
-  } else {
-    console.log("Form Error");
+    console.log(jqxhr);
   }
 });
 
@@ -385,10 +383,9 @@ $.fn.serializeForm = function () {
 };
 
 $("#leadFormSubmit").on("click", function (e) {
-  e.preventDefault();
-
   if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
-    // window.location.href = "/thank-you";
+    e.preventDefault();
+
     var jqxhr = $.ajax({
       url: leadUrl,
       method: "GET",
@@ -396,8 +393,9 @@ $("#leadFormSubmit").on("click", function (e) {
       data: $leadform.serializeForm(),
       success: function () {
         console.log($leadform.serializeForm());
+        window.location.href = "/thank-you";
+
         // document.getElementById('thankyou_message').style.display='block';
-        window.location.href = "./thank-you";
       },
       error: function (e) {
         console.log(e);
@@ -408,18 +406,22 @@ $("#leadFormSubmit").on("click", function (e) {
   }
 });
 $("#mobile-leadFormSubmit").on("click", function (e) {
-  e.preventDefault();
-
   if (leadForm_validation("mobile-submit-leadForm-to-google-sheet") == true) {
-    // window.location.href = "/thank-you";
+    e.preventDefault();
+
+    // $(this).hide();
+
     var jqxhr = $.ajax({
       url: leadUrl,
       method: "GET",
       dataType: "json",
-      data: $mLeadForm.serializeForm(),
+      data: $mLeadForm.serializeObject(),
       success: function () {
-        // document.getElementById('thankyou_message').style.display='block';
-        window.location.href = "./thank-you";
+        console.log($leadform.serializeForm());
+        window.location.href = "/thank-you";
+
+        // alert("Message Sent");
+        // document.getElementById("thankyou_message").style.display = "block";
       },
     });
   } else {
