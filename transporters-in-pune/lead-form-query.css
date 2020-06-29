@@ -28,8 +28,13 @@
 
   .mobile-section .formSection {
     background-color: white;
-    padding: 5%;
+    padding: 0% 1%;
     border-radius: 10px;
+  }
+
+  .lead-form .form-header {
+    padding: 6% 4% 0% 4%;
+    margin: 0;
   }
 
   .lead-form form input,
@@ -39,7 +44,7 @@
 
   .movingPhoto img {
     width: 100%;
-    margin: 5% 0;
+    margin: 0% 0 5% 0;
   }
 
   .client h2,
