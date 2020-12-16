@@ -27,7 +27,6 @@ $(document).ready(function () {
   $("#hydrabadLeadFormSubmit").on("click", function (e) {
     if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
       e.preventDefault();
-      console.log($leadform.serializeForm());
       var jqxhr = $.ajax({
         url: leadUrl,
         method: "POST",
