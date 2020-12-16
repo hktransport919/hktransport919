@@ -1,8 +1,8 @@
 $(document).ready(function () {
   // Send Form to Google sheets
 
-  var $leadform = $("form#hydrabadLeadForm"),
-    $mLeadForm = $("form#mobile-hydrabadLeadForm"),
+  var $leadform = $("form#HyderabadLeadForm"),
+    $mLeadForm = $("form#mobile-HyderabadLeadForm"),
     leadUrl =
       "https://script.google.com/macros/s/AKfycbwfyxkaA7yXRjLiEDKf9v3Wpfer-RkyGXtptQNnFqLTYQlgjPdwBUeK/exec";
 
@@ -24,9 +24,10 @@ $(document).ready(function () {
     return o;
   };
 
-  $("#hydrabadLeadFormSubmit").on("click", function (e) {
+  $("#HyderabadLeadFormSubmit").on("click", function (e) {
+    e.preventDefault();
+
     if (leadForm_validation("submit-leadForm-to-google-sheet") == true) {
-      e.preventDefault();
       var jqxhr = $.ajax({
         url: leadUrl,
         method: "POST",
@@ -46,7 +47,7 @@ $(document).ready(function () {
       console.log("Form Error");
     }
   });
-  $("#mobile-hydrabadLeadFormSubmit").on("click", function (e) {
+  $("#mobile-HyderabadLeadFormSubmit").on("click", function (e) {
     if (leadForm_validation("mobile-submit-leadForm-to-google-sheet") == true) {
       e.preventDefault();
 
